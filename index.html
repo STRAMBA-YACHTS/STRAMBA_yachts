@@ -4,150 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>STRAMBA Yachts — Futura</title>
-<meta name="description" content="STRAMBA Yachts — Futura F TYPE 69. Curves make you fly. The sea, without pollution. Made in Italy.">
-<meta property="og:image" content="assets/futura-sail.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --black:#120f12; --black2:#1b171b; --blue:#1583d8; --blue-l:#4fb0f5; --yellow:#f2c230;
-  --white:#fff; --paper:#f4f6f8; --grey:#8d949c; --line:rgba(255,255,255,.14);
-  --todo:#fff4c2; --todo-line:#e0b400;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:#fff;background:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-weight:200;line-height:1.05;letter-spacing:.01em}
-a{color:inherit}
-img{display:block;max-width:100%}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.todo{background:var(--todo);border:1px dashed var(--todo-line);padding:0 6px;border-radius:3px;font-size:.88em;color:#6b5200;font-weight:400}
-.draft{position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--todo);color:#6b5200;text-align:center;font-size:13px;padding:6px 16px;font-weight:400}
-
-/* nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .3s}
-nav.solid{background:rgba(18,15,18,.9);backdrop-filter:blur(10px)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.logo{font-size:22px;letter-spacing:.42em;font-weight:300;text-decoration:none}
-.logo .a{display:inline-block;transform:skewX(-18deg)}
-.logo small{font-size:10px;letter-spacing:.4em;color:var(--yellow);margin-left:10px;font-weight:400}
-nav ul{display:flex;gap:30px;list-style:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
-nav ul a{text-decoration:none;opacity:.8}
-nav ul a:hover{opacity:1}
-.btn{white-space:nowrap;display:inline-block;padding:13px 28px;border-radius:999px;text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:400;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.2s}
-.btn-y{background:var(--yellow);color:var(--black)}
-.btn-y:hover{background:#ffd54a}
-.btn-o{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
-.btn-o:hover{border-color:#fff}
-.btn-b{background:var(--black);color:#fff}
-@media (max-width:860px){nav ul{display:none} nav .btn{padding:9px 14px;font-size:10px;letter-spacing:.14em} .logo{font-size:18px;letter-spacing:.3em} .logo small{display:none}}
-
-/* hero */
-.hero{position:relative;height:100vh;min-height:620px;overflow:hidden;display:flex;align-items:flex-end}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,18,.25) 0%,rgba(18,15,18,0) 35%,rgba(18,15,18,.8) 100%)}
-.hero .wrap{position:relative;z-index:2;padding-bottom:90px;width:100%}
-.eyebrow{font-size:12px;letter-spacing:.42em;text-transform:uppercase;margin-bottom:20px;font-weight:400}
-.eyebrow b{color:var(--yellow);font-weight:400}
-.hero h1{font-size:clamp(52px,9vw,128px);margin-bottom:22px}
-.hero p{font-size:clamp(17px,2vw,21px);max-width:540px;opacity:.9;margin-bottom:36px}
-.ctas{display:flex;gap:14px;flex-wrap:wrap}
-
-/* generic */
-section{padding:120px 0}
-.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--blue-l);margin-bottom:16px;font-weight:400}
-h2{font-size:clamp(38px,5.4vw,68px);margin-bottom:24px}
-.body{font-size:19px;color:rgba(255,255,255,.72);max-width:560px}
-.body+.body{margin-top:16px}
-@media (max-width:860px){section{padding:80px 0}}
-
-/* concept: sketch on black */
-.concept .sketch{margin:56px auto 0;width:100%;max-width:1400px}
-.concept .head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
-@media (max-width:860px){.concept .head{grid-template-columns:1fr;gap:10px}}
-
-/* numbers */
-.numbers{background:var(--black2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:90px 0}
-.grid-n{display:grid;grid-template-columns:repeat(6,1fr);gap:0}
-.grid-n div{padding:10px 20px;border-left:1px solid var(--line)}
-.grid-n div:first-child{border-left:0;padding-left:0}
-.grid-n b{display:block;white-space:nowrap;font-size:clamp(30px,3.2vw,46px);font-weight:200;line-height:1}
-.grid-n b em{font-style:normal;color:var(--yellow)}
-.grid-n span{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--grey);font-weight:400}
-@media (max-width:980px){.grid-n{grid-template-columns:repeat(3,1fr);row-gap:36px}.grid-n div:nth-child(4){border-left:0;padding-left:0}}
-@media (max-width:560px){.grid-n{grid-template-columns:1fr 1fr}.grid-n div:nth-child(odd){border-left:0;padding-left:0}.grid-n div:nth-child(4){border-left:1px solid var(--line);padding-left:20px}}
-
-/* split with image */
-.split{display:grid;grid-template-columns:1.25fr 1fr;min-height:640px}
-.split .pic{background:center/cover}
-.split .txt{padding:100px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--black)}
-@media (max-width:860px){.split{grid-template-columns:1fr}.split .pic{min-height:320px}.split .txt{padding:64px 24px}}
-
-/* full bleed */
-.bleed{position:relative;min-height:88vh;background:url(assets/futura-sail.jpg) center bottom/cover;display:flex;align-items:flex-start;color:var(--black)}
-.bleed .wrap{padding-top:90px;width:100%}
-.bleed q{font-size:clamp(34px,5vw,64px);font-weight:200;quotes:none;display:block;max-width:760px;line-height:1.1}
-.bleed small{display:block;margin-top:14px;font-size:12px;letter-spacing:.4em;text-transform:uppercase;font-weight:400}
-
-/* test sail */
-.light{background:var(--paper);color:var(--black)}
-.light .kicker{color:var(--blue)}
-.light .body{color:#4a4f56}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
-.step{border-top:1px solid var(--black);padding-top:24px}
-.step i{font-style:normal;font-size:14px;letter-spacing:.3em;color:var(--blue);font-weight:500}
-.step h3{font-size:34px;margin:10px 0 10px}
-.step p{color:#4a4f56}
-@media (max-width:860px){.steps{grid-template-columns:1fr}}
-
-/* tour */
-.stops{margin-top:48px;border-top:1px solid rgba(0,0,0,.15)}
-.stop{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:center;padding:24px 0;border-bottom:1px solid rgba(0,0,0,.15)}
-.stop .when{font-weight:400;letter-spacing:.1em}
-.stop .where{font-size:28px;font-weight:200}
-@media (max-width:860px){.stop{grid-template-columns:1fr;gap:6px}}
-
-/* crew */
-.crew{position:relative;min-height:80vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(18,15,18,.85) 0%,rgba(18,15,18,.3) 60%,rgba(18,15,18,0) 100%),url(assets/futura-night.jpg) center/cover}
-
-/* form */
-.form-sec{background:var(--black2)}
-.form-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
-@media (max-width:860px){.form-grid{grid-template-columns:1fr;gap:28px}}
-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-form .full{grid-column:1/-1}
-.lbl{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:8px;font-weight:400}
-input,select,textarea{width:100%;padding:14px 0;border:0;border-bottom:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font:inherit;font-size:17px;border-radius:0}
-input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--yellow)}
-select option{color:var(--black)}
-textarea{min-height:90px;resize:vertical}
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chips label{display:flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.3);padding:9px 16px;border-radius:999px;cursor:pointer;font-size:15px}
-.chips input{width:auto;accent-color:var(--yellow)}
-.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.7)}
-.check input{width:auto;margin-top:5px;accent-color:var(--yellow)}
-.ok{display:none;grid-column:1/-1;background:var(--todo);color:#6b5200;padding:12px 16px;border-radius:4px}
-@media (max-width:860px){form{grid-template-columns:1fr}}
-
-footer{border-top:1px solid var(--line);color:var(--grey);font-size:14px;padding:40px 0}
-footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-footer a{text-decoration:none;color:#fff}
-</style>
+<meta name="description" content="STRAMBA Yachts — Futura F TYPE 69. The sea, without pollution. Book a test sail. Made in Italy.">
+<meta property="og:title" content="STRAMBA Yachts — Futura">
+<meta property="og:description" content="Curves make you fly. Book a test sail on Futura.">
+<meta property="og:image" content="https://stramba.yachts/assets/futura-sail.jpg">
+<link rel="preload" href="assets/fonts/jost-latin-200-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
-<div class="draft">BOZZA v2 — i campi in giallo sono dati mancanti. Il modulo non invia ancora nulla.</div>
 
 <nav id="nav">
   <div class="wrap">
     <a href="#top" class="logo">STR<span class="a">A</span>MBA<small>YACHTS</small></a>
     <ul>
       <li><a href="#futura">Futura</a></li>
-      <li><a href="#test-sail">Test sail</a></li>
-      <li><a href="#tour">Tour</a></li>
+      <li><a href="#prova">Test sail</a></li>
+      <li><a href="#calendario">Calendar</a></li>
       <li><a href="#crew">Crew</a></li>
     </ul>
-    <a href="#contact" class="btn btn-y">Book a test sail</a>
+    <a href="#contatti" class="btn btn-y">Book a test sail</a>
   </div>
 </nav>
 
@@ -160,7 +35,7 @@ footer a{text-decoration:none;color:#fff}
     <h1>curves make<br>you fly</h1>
     <p>The sea, without pollution. A new dimension of comfort to enjoy the magic of the sea — respecting the planet.</p>
     <div class="ctas">
-      <a href="#contact" class="btn btn-y">Book a test sail</a>
+      <a href="#contatti" class="btn btn-y">Book a test sail</a>
       <a href="#futura" class="btn btn-o">Discover Futura</a>
     </div>
   </div>
@@ -207,28 +82,24 @@ footer a{text-decoration:none;color:#fff}
   </div>
 </div>
 
-<section class="light" id="test-sail">
+<section class="light" id="prova">
   <div class="wrap">
     <div class="kicker">Test sail</div>
     <h2>Feel it on board</h2>
     <p class="body">The best way to understand Futura is to sail it. Book a place on one of our test days.</p>
     <div class="steps">
-      <div class="step"><i>01</i><h3>Choose a date</h3><p>Pick a port and a day from the Futura Tour calendar.</p></div>
-      <div class="step"><i>02</i><h3>We confirm</h3><p>You receive confirmation and meeting details. <span class="todo">durata uscita?</span> <span class="todo">max ospiti?</span></p></div>
-      <div class="step"><i>03</i><h3>On board</h3><p>Sail with our team <span class="todo">chi è a bordo?</span> and feel the wing at work.</p></div>
+      <div class="step"><i>01</i><h3>Choose when</h3><p>Pick the period and port you prefer from the calendar.</p></div>
+      <div class="step"><i>02</i><h3>We get back to you</h3><p>We confirm availability, time and meeting point.</p></div>
+      <div class="step"><i>03</i><h3>On board</h3><p>Sail with our crew and feel the wing at work.</p></div>
     </div>
   </div>
 </section>
 
-<section class="light" id="tour" style="padding-top:0">
+<section class="light" id="calendario" style="padding-top:0">
   <div class="wrap">
     <div class="kicker">Futura Tour</div>
     <h2>Where to find Futura</h2>
-    <div class="stops">
-      <div class="stop"><div class="when"><span class="todo">data</span></div><div class="where"><span class="todo">porto / evento</span></div><a href="#contact" class="btn btn-b">Book</a></div>
-      <div class="stop"><div class="when"><span class="todo">data</span></div><div class="where"><span class="todo">porto / evento</span></div><a href="#contact" class="btn btn-b">Book</a></div>
-      <div class="stop"><div class="when"><span class="todo">data</span></div><div class="where"><span class="todo">porto / evento</span></div><a href="#contact" class="btn btn-b">Book</a></div>
-    </div>
+    <div class="stops" id="stops"></div>
   </div>
 </section>
 
@@ -237,51 +108,106 @@ footer a{text-decoration:none;color:#fff}
     <div class="kicker">Futura Crew</div>
     <h2>Join the crew</h2>
     <p class="body">News from the yard, first access to test sail dates, invitations to on-board events. For those who want to follow Futura from the start.</p>
-    <div class="ctas" style="margin-top:32px"><a href="#contact" class="btn btn-y">Join the crew</a></div>
+    <div class="ctas" style="margin-top:32px"><a href="#contatti" class="btn btn-y" data-pick="Futura Crew">Join the crew</a></div>
   </div>
 </section>
 
-<section class="form-sec" id="contact">
+<section class="form-sec" id="contatti">
   <div class="wrap form-grid">
     <div>
       <div class="kicker">Get in touch</div>
       <h2>Register your interest</h2>
       <p class="body">Test sail, purchase, events, press or partnership: tell us what you are interested in and we will get back to you.</p>
     </div>
-    <form onsubmit="event.preventDefault();document.getElementById('ok').style.display='block'">
+    <form id="form" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
       <div class="full">
         <span class="lbl">I'm interested in</span>
         <div class="chips">
-          <label><input type="checkbox" value="test"> Test sail</label>
-          <label><input type="checkbox" value="purchase"> Purchase</label>
-          <label><input type="checkbox" value="event"> On-board events</label>
-          <label><input type="checkbox" value="crew"> Futura Crew</label>
-          <label><input type="checkbox" value="press"> Press / partner</label>
+          <label><input type="checkbox" name="interesse" value="Test sail"> Test sail</label>
+          <label><input type="checkbox" name="interesse" value="Purchase"> Purchase</label>
+          <label><input type="checkbox" name="interesse" value="On-board events"> On-board events</label>
+          <label><input type="checkbox" name="interesse" value="Futura Crew"> Futura Crew</label>
+          <label><input type="checkbox" name="interesse" value="Press / partner"> Press / partner</label>
         </div>
       </div>
-      <div><label class="lbl" for="n">Name</label><input id="n" required></div>
-      <div><label class="lbl" for="e">Email</label><input id="e" type="email" required></div>
-      <div><label class="lbl" for="p">Phone</label><input id="p" type="tel"></div>
-      <div><label class="lbl" for="w">Preferred date / port</label><select id="w"><option>— Futura Tour —</option><option>tappa da definire</option></select></div>
-      <div class="full"><label class="lbl" for="m">Message</label><textarea id="m"></textarea></div>
-      <label class="check full"><input type="checkbox" required> I have read the privacy policy and agree to the processing of my data. <span class="todo">link privacy</span></label>
-      <label class="check full"><input type="checkbox"> I'd like to receive news from STRAMBA Yachts.</label>
-      <div class="full"><button class="btn btn-y" type="submit">Send</button></div>
-      <div class="ok" id="ok">Bozza: qui il modulo salverà la richiesta su Supabase e invierà la conferma via email.</div>
+      <div><label class="lbl" for="n">Full name</label><input id="n" name="name" required autocomplete="name"></div>
+      <div><label class="lbl" for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+      <div><label class="lbl" for="p">Phone</label><input id="p" name="telefono" type="tel" autocomplete="tel"></div>
+      <div><label class="lbl" for="w">Preferred date / port</label><select id="w" name="data_preferita"><option value="">—</option></select></div>
+      <div class="full"><label class="lbl" for="m">Message</label><textarea id="m" name="message"></textarea></div>
+      <label class="check full"><input type="checkbox" id="privacy" required> <span>I have read the <a href="privacy.html" target="_blank">privacy policy</a>.</span></label>
+      <label class="check full"><input type="checkbox" name="newsletter" value="Yes"> <span>I'd like to receive updates from STRAMBA Yachts (optional).</span></label>
+      <div class="full"><button class="btn btn-y" type="submit" id="send">Send</button></div>
+      <div class="msg" id="msg"></div>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>STRAMBA SRL · P.IVA IT04156810402 · Riccione (RN), Italy</div>
-    <div>Part of <a href="https://www.stramba.blue">STRAMBA</a> · <a href="#">Privacy</a> · <a href="#">Cookie</a></div>
+    <div>STRAMBA S.r.l. · VAT IT04156810402 · Riccione (RN), Italy</div>
+    <div>Part of <a href="https://www.stramba.blue">STRAMBA</a> · <a href="privacy.html">Privacy &amp; cookies</a></div>
   </div>
 </footer>
 
 <script>
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
+/* Chiave Web3Forms: fa da "alias" dell'email di destinazione, che così non compare nel sito. */
+const WEB3FORMS_KEY = "04ab7bff-616c-4919-b332-3deb599f6a28";
+
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60), {passive:true});
+
+/* Calendario: si modifica nel file eventi.json */
+function renderEventi(list){
+  const box = document.getElementById('stops'), sel = document.getElementById('w');
+  const esc = s => String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  if(!list.length){ box.innerHTML = '<p class="empty">New dates coming soon. Leave your details to be notified.</p>'; }
+  else box.innerHTML = list.map(ev => `
+    <div class="stop">
+      <div class="when">${esc(ev.quando)}</div>
+      <div class="where">${esc(ev.dove)}${ev.nota ? `<div style="font-size:16px;color:#4a4f56;font-weight:300">${esc(ev.nota)}</div>` : ''}</div>
+      <a href="#contatti" class="btn btn-b" data-when="${esc(ev.quando + ' · ' + ev.dove)}">Book</a>
+    </div>`).join('');
+  list.forEach(ev => { const o = document.createElement('option'); o.textContent = ev.quando + ' · ' + ev.dove; sel.appendChild(o); });
+  const o = document.createElement('option'); o.textContent = 'Other / to be arranged'; sel.appendChild(o);
+}
+fetch('eventi.json', {cache:'no-store'}).then(r => r.json()).then(renderEventi).catch(() => renderEventi(window.EVENTI_FALLBACK || []));
+
+/* I pulsanti "Book" precompilano il modulo */
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-when],[data-pick]'); if(!b) return;
+  if(b.dataset.when){ document.getElementById('w').value = b.dataset.when; document.querySelector('input[value="Test sail"]').checked = true; }
+  if(b.dataset.pick){ document.querySelector(`input[value="${b.dataset.pick}"]`).checked = true; }
+});
+
+/* Invio modulo */
+document.getElementById('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, F = n => f.elements[n], msg = document.getElementById('msg'), btn = document.getElementById('send');
+  const show = (cls, t) => { msg.className = 'msg ' + cls; msg.textContent = t; };
+  if(!F('name').value.trim() || !F('email').checkValidity() || !F('email').value){ return show('err', 'Please enter a valid name and email.'); }
+  if(!document.getElementById('privacy').checked){ return show('err', 'Please confirm you have read the privacy policy.'); }
+  const interessi = [...f.querySelectorAll('input[name=interesse]:checked')].map(i => i.value).join(', ') || '—';
+  const data = {
+    access_key: WEB3FORMS_KEY,
+    subject: 'stramba.yachts — new request: ' + interessi,
+    from_name: 'STRAMBA Yachts website',
+    name: F('name').value.trim(), email: F('email').value.trim(), telefono: F('telefono').value.trim() || '—',
+    interessi, data_preferita: F('data_preferita').value || '—',
+    message: F('message').value.trim() || '—',
+    newsletter: F('newsletter').checked ? 'Yes' : 'No',
+    botcheck: F('botcheck').checked
+  };
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try{
+    const r = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json'}, body: JSON.stringify(data)});
+    const j = await r.json();
+    if(j.success){ f.reset(); show('ok', 'Thank you! We have received your request and will get back to you soon.'); }
+    else throw 0;
+  }catch(_){ show('err', 'Sending failed. Please try again in a few minutes.'); }
+  btn.disabled = false; btn.textContent = 'Send';
+});
 </script>
 </body>
 </html>
