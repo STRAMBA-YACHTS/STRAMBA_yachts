@@ -1,0 +1,468 @@
+<meta name="robots" content="noindex,nofollow">
+<title>Futura 2027 Sponsor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap">
+<style>
+/* Concept: poster-scale type that swings between hairline (silenzio) and black (festa), sea blues cut by sun-yellow and turquoise blocks. Single dark-first look. */
+:root{
+  --abyss:#071E2D; --deep:#0B3550; --sea:#005581; --foam:#F7F3E8; --ink:#0A2B3D;
+  --sun:#FFC800; --turq:#1EC8BE; --mist:#CFE3E6;
+  --display:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--abyss);color:var(--foam);font-family:var(--display);font-size:1.0625rem;line-height:1.55;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--abyss)}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+.wrap{width:100%;max-width:1280px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(64px,9vw,128px)}
+.tag{display:inline-block;background:var(--sun);color:var(--abyss);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;padding:.65em 1.1em}
+.tag.turq{background:var(--turq)}
+.big{font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.02em;text-wrap:balance}
+.lead{font-size:clamp(1.1rem,1.6vw,1.4rem);line-height:1.55;font-weight:400;color:var(--mist);max-width:60ch}
+.y{color:var(--sun)}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,30,45,.9);backdrop-filter:blur(10px)}
+.bar .wrap{display:flex;align-items:center;gap:28px;padding-block:10px}
+.logo img{height:46px;width:auto}
+.bar nav{display:flex;gap:28px;margin-left:auto}
+.bar nav a{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.bar nav a:hover{border-color:var(--sun)}
+.sound{display:flex;align-items:center;gap:10px;background:transparent;border:2px solid var(--sun);color:var(--sun);font:700 .78rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.8em 1.1em;cursor:pointer}
+.sound[aria-pressed="true"]{background:var(--sun);color:var(--abyss)}
+.eq{display:flex;align-items:flex-end;gap:3px;height:14px}
+.eq i{display:block;width:3px;background:currentColor;height:4px}
+.sound[aria-pressed="true"] .eq i{animation:eq 900ms ease-in-out infinite}
+.sound[aria-pressed="true"] .eq i:nth-child(2){animation-delay:-300ms}
+.sound[aria-pressed="true"] .eq i:nth-child(3){animation-delay:-600ms}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+@media(max-width:760px){.bar nav{display:none}.sound{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:clamp(580px,86vh,900px);display:flex;flex-direction:column;justify-content:flex-end;background:var(--deep) url(media/hero-poster.jpg) center/cover no-repeat}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,30,45,.93),rgba(7,30,45,.55) 55%,rgba(7,30,45,.05)),linear-gradient(0deg,rgba(7,30,45,.75),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,32px);padding-block:clamp(56px,9vw,112px) clamp(28px,4vw,48px)}
+.hero h1{font-size:clamp(3.6rem,14vw,11.5rem)}
+.hero .lead{color:var(--foam)}
+.sticker{position:absolute;z-index:3;right:max(16px,env(safe-area-inset-right,0px));top:clamp(24px,9vw,120px);background:var(--sun);color:var(--abyss);padding:20px 24px;transform:rotate(-7deg);max-width:min(340px,70vw);animation:wob 7s ease-in-out infinite}
+.sticker b{display:block;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+.sticker span{display:block;font-weight:900;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.05;text-transform:uppercase;margin-top:6px}
+@keyframes wob{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(-4deg) translateY(-6px)}}
+.marquee{position:relative;z-index:2;background:var(--turq);color:var(--abyss);overflow:hidden;white-space:nowrap}
+.marquee div{display:inline-flex;gap:0;animation:run 32s linear infinite;padding-block:14px}
+.marquee span{font-weight:900;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;padding-right:2.2em}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* veicolo */
+.veicolo{background:var(--abyss)}
+.veicolo .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,96px);align-items:center}
+.veicolo h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:24px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.tile{background:var(--sea);padding:22px}
+.tile h3{font-weight:900;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;color:var(--sun)}
+.tile p{margin-top:8px;font-size:.98rem;line-height:1.4}
+.photo{position:relative;box-shadow:18px 18px 0 var(--sun)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media(max-width:900px){.veicolo .grid{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.photo{margin-right:18px}}
+
+/* viaggio */
+.viaggio{background:linear-gradient(180deg,rgba(7,30,45,.9),rgba(7,30,45,.5) 55%,rgba(7,30,45,.88)),url(media/mare-scia.jpg) center/cover}
+.viaggio .wrap{display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)}
+.viaggio h2{font-size:clamp(3rem,11.5vw,9.5rem)}
+.viaggio .lead{border-left:10px solid var(--turq);padding-left:clamp(20px,3vw,40px);color:var(--foam);max-width:62ch}
+
+/* video */
+.film{background:var(--deep)}
+.film .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.film h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px}
+.screen{border:2px solid var(--sun);background:#000}
+.screen video{width:100%;aspect-ratio:16/9;object-fit:cover}
+@media(max-width:900px){.film .grid{grid-template-columns:1fr}}
+
+/* chiaroscuro */
+.duo{display:grid;grid-template-columns:1fr 1fr;transition:grid-template-columns .5s ease}
+.duo:has(.quiet:hover){grid-template-columns:1.35fr 1fr}
+.duo:has(.fest:hover){grid-template-columns:1fr 1.35fr}
+.pane{min-height:clamp(380px,46vw,600px);padding:clamp(28px,5vw,72px) max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.quiet{background:linear-gradient(180deg,rgba(7,30,45,.78),rgba(0,85,129,.7)),url(media/onde.jpg) center/cover;color:var(--foam)}
+.quiet h2{font-weight:200;font-size:clamp(3rem,9vw,8rem);line-height:.95;letter-spacing:-.01em;text-transform:lowercase}
+.fest{background:linear-gradient(135deg,var(--turq),var(--sun));color:var(--abyss)}
+.fest h2{font-weight:900;font-size:clamp(3rem,9vw,8rem);line-height:.9;letter-spacing:-.03em;text-transform:uppercase}
+.pane .tag{align-self:flex-start;background:var(--abyss);color:var(--sun)}
+.pane p{font-size:clamp(1.05rem,1.4vw,1.25rem);max-width:34ch}
+@media(max-width:760px){.duo,.duo:has(.quiet:hover),.duo:has(.fest:hover){grid-template-columns:1fr}.pane{padding-inline:max(16px,env(safe-area-inset-left,0px))}}
+
+/* rotta */
+.rotta{background:var(--foam);color:var(--ink)}
+.rotta h2{font-size:clamp(2.4rem,6.4vw,5.6rem);margin-block:22px 8px}
+.rotta .lead{color:#2F4A5C}
+.wave{display:block;width:100%;height:auto;margin-top:36px}
+.legs{display:grid;grid-template-columns:repeat(5,1fr);margin-top:0}
+.leg{padding:22px 16px 28px}
+.leg h3{font-weight:900;font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:14px}
+.leg li{font-size:1.35rem;font-weight:400;line-height:1.4;padding-block:2px}
+.leg.hot{background:var(--abyss);color:var(--foam)}
+.leg.hot h3{color:var(--sun)}
+.leg.hot li:last-child{color:var(--sun);font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-top:6px}
+@media(max-width:900px){.wave{display:none}.legs{grid-template-columns:1fr 1fr;gap:8px;margin-top:32px}.leg{border-top:2px solid var(--sun)}.leg.hot{border-top:2px solid var(--turq)}}
+@media(max-width:520px){.legs{grid-template-columns:1fr}}
+
+/* tappa */
+.tappa{background:var(--sun);color:var(--abyss)}
+.tappa h2{font-size:clamp(2.4rem,6.4vw,5.6rem);margin-top:22px}
+.tappa .tag{background:var(--abyss);color:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(32px,5vw,64px)}
+.step{background:var(--abyss);color:var(--foam);padding:28px 24px 32px;display:flex;flex-direction:column;gap:12px}
+.step b{font-weight:900;font-size:clamp(3.2rem,6vw,5rem);line-height:.9;color:var(--turq)}
+.step h3{font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase}
+.step p{font-size:1rem;line-height:1.5;color:var(--mist)}
+@media(max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* incontri */
+.incontri{background:var(--abyss)}
+.incontri .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,96px);align-items:center}
+.incontri img{width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:14px solid var(--turq)}
+.incontri h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px 28px}
+.rows{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:minmax(0,15ch) minmax(0,1fr);gap:8px 28px;padding-block:18px;border-top:2px solid rgba(207,227,230,.28)}
+.row h3{font-weight:900;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sun)}
+.row p{color:var(--mist);line-height:1.5}
+@media(max-width:900px){.incontri .grid{grid-template-columns:1fr}.incontri img{aspect-ratio:16/10}}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+
+/* ospiti */
+.ospiti{background:var(--deep)}
+.ospiti h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px 40px}
+.guest{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:12px 40px;align-items:center;padding-block:clamp(14px,2vw,26px);border-top:3px solid var(--foam)}
+.guest h3{font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,10.5vw,8.6rem);line-height:.9;letter-spacing:-.03em;overflow-wrap:anywhere}
+.guest p{color:var(--mist);max-width:34ch}
+.guest:nth-of-type(1) h3{color:var(--foam)}
+.guest:nth-of-type(2) h3{color:var(--sun)}
+.guest:nth-of-type(3) h3{color:var(--turq)}
+@media(max-width:760px){.guest{grid-template-columns:1fr}}
+
+/* serie */
+.serie{background:var(--foam);color:var(--ink)}
+.serie h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:22px 14px}
+.serie .lead{color:#2F4A5C}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin-top:clamp(32px,4vw,56px)}
+.card{padding:24px 22px 26px;display:flex;flex-direction:column;gap:12px;min-height:250px;background:var(--abyss);color:var(--foam)}
+.card.b{background:var(--sea)}
+.card.c{background:var(--turq);color:var(--abyss)}
+.card.s{background:var(--sun);color:var(--abyss)}
+.card h3{font-weight:900;font-size:1.45rem;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+.card p{font-size:1rem;line-height:1.45;flex:1}
+.card small{font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+
+/* sponsor */
+.sponsor{background:var(--deep)}
+.sponsor h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:22px 40px}
+.forms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.form{padding:32px 26px 36px;display:flex;flex-direction:column;gap:14px;background:var(--abyss)}
+.form:nth-child(2){background:var(--turq);color:var(--abyss)}
+.form:nth-child(3){background:var(--sun);color:var(--abyss)}
+.form h3{font-weight:900;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1;text-transform:uppercase}
+.form p{line-height:1.5}
+.form:nth-child(1) p{color:var(--mist)}
+.note{margin-top:32px;font-size:1.15rem;max-width:62ch}
+@media(max-width:900px){.forms{grid-template-columns:1fr}}
+
+/* budget */
+.budget{background:var(--abyss);text-align:left}
+.budget h2{font-size:clamp(2.6rem,8vw,7rem);margin-block:24px 28px}
+.budget .lead{max-width:56ch}
+.cta{display:inline-block;margin-top:36px;background:var(--turq);color:var(--abyss);font-weight:900;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:1.15em 1.8em;transition:transform .2s}
+.cta:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--sun)}
+
+/* chiusura */
+.end{background:linear-gradient(180deg,rgba(7,30,45,.88),rgba(7,30,45,.7)),url(media/mare-scia.jpg) center/cover;text-align:center}
+.end blockquote{margin:0 auto;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(2.2rem,6vw,5rem);line-height:1.08;max-width:18ch;text-wrap:balance}
+.end cite{display:block;margin-top:24px;font-style:normal;font-weight:700;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sun)}
+.foot{background:var(--abyss);padding-block:36px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.foot img{height:44px;width:auto}
+.foot p{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mist)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sticker,.marquee div,.sound[aria-pressed="true"] .eq i{animation:none}
+  .duo{transition:none}
+}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="STRAMBA"><img src="media/stramba-white.png" alt="STRAMBA" width="88" height="46"></a>
+    <nav aria-label="Sezioni">
+      <a href="#viaggio">Viaggio</a>
+      <a href="#rotta">Rotta</a>
+      <a href="#serie">Serie</a>
+      <a href="#sponsor">Sponsor</a>
+    </nav>
+    <button class="sound" id="sound" type="button" aria-pressed="false" aria-label="Attiva o disattiva la colonna sonora">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span id="soundLabel">Suono</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Futura Event Tour 2027">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg" aria-hidden="true">
+      <source src="media/hero.mp4" type="video/mp4">
+    </video>
+    <div class="sticker"><b>Aprile → Settembre</b><span>Rimini → Costa Azzurra</span></div>
+    <div class="wrap">
+      <span class="tag">Futura Event Tour · Estate 2027</span>
+      <h1 class="big">Tutto<br>il <span class="y">mare</span></h1>
+      <p class="lead">Un’estate intera a bordo del veicolo più straordinario, nei porti più vivi del Mediterraneo.</p>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div>
+        <span>Silenzio</span><span>Festa</span><span>Vento</span><span>Incontri</span><span>Tutto il mare</span>
+        <span>Silenzio</span><span>Festa</span><span>Vento</span><span>Incontri</span><span>Tutto il mare</span>
+        <span>Silenzio</span><span>Festa</span><span>Vento</span><span>Incontri</span><span>Tutto il mare</span>
+        <span>Silenzio</span><span>Festa</span><span>Vento</span><span>Incontri</span><span>Tutto il mare</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec veicolo" id="veicolo">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Il veicolo</span>
+        <h2 class="big">Una barca che non somiglia a nessun’altra</h2>
+        <p class="lead">La comodità di una barca a motore, ma a vela. Gli spazi di bordo sono tutti a disposizione e le manovre sono semplici: non coinvolgono gli ospiti.</p>
+        <div class="tiles">
+          <div class="tile"><h3>Spazio</h3><p>Coperta libera da sartie e attrezzature</p></div>
+          <div class="tile"><h3>Equilibrio</h3><p>Meno sbandamento, più comfort e sicurezza</p></div>
+          <div class="tile"><h3>Prestazioni</h3><p>Più spinta dal vento, meno carburante</p></div>
+        </div>
+      </div>
+      <div class="photo"><img src="media/futura-aerea.jpg" alt="Futura vista dall’alto in navigazione su un mare verde-turchese, con l’equipaggio a bordo"></div>
+    </div>
+  </section>
+
+  <section class="sec viaggio" id="viaggio">
+    <div class="wrap">
+      <span class="tag">Il viaggio</span>
+      <h2 class="big">Un’estate<br>per <span class="y">incontrare</span></h2>
+      <p class="lead">Da primavera a settembre Futura risale l’Adriatico, scende lungo la Puglia, arriva a Napoli, poi Amalfi, Capri, la Sardegna e la Costa Azzurra. Si ferma per giorni, si lascia visitare, riparte con ospiti diversi. Il viaggio è il racconto.</p>
+    </div>
+  </section>
+
+  <section class="sec film" id="film">
+    <div class="wrap grid">
+      <div>
+        <span class="tag turq">A bordo</span>
+        <h2 class="big">Si naviga così</h2>
+        <p class="lead">Poppa e vela maggiore, mare aperto: il punto di vista di chi sale a bordo.</p>
+      </div>
+      <div class="screen">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="Navigazione a bordo di Futura">
+          <source src="media/andatura.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="duo" aria-label="Il ritmo del viaggio">
+    <div class="pane quiet">
+      <span class="tag">Silenzio</span>
+      <h2>l’alba senza motore</h2>
+      <p>Solo acqua e vento. Baie e aree protette raggiungibili solo a vela, pescatori che raccontano, il ritmo lento del largo.</p>
+    </div>
+    <div class="pane fest">
+      <span class="tag">Festa</span>
+      <h2>La notte in marina</h2>
+      <p>Il porto più vivo dell’estate: musica, cene, persone arrivate da lontano. Energia piena, senza perdere il carattere.</p>
+    </div>
+  </section>
+
+  <section class="sec rotta" id="rotta">
+    <div class="wrap">
+      <span class="tag">La rotta · indicativa</span>
+      <h2 class="big">Da Rimini alla Costa Azzurra</h2>
+      <p class="lead">Tappe e date si confermano insieme agli sponsor. Luglio a Napoli, con la Coppa America, è il punto più alto dell’estate.</p>
+      <svg class="wave" viewBox="0 0 1000 80" role="img" aria-label="Linea dell’estate con cinque tappe, da primavera a settembre">
+        <path d="M0 40 C 60 4, 140 76, 200 40 S 340 4, 400 40 S 540 76, 600 40 S 740 4, 800 40 S 940 76, 1000 40" fill="none" stroke="#005581" stroke-width="3"/>
+        <circle cx="100" cy="40" r="11" fill="#005581"/>
+        <circle cx="300" cy="40" r="11" fill="#005581"/>
+        <circle cx="500" cy="40" r="18" fill="#1EC8BE"/>
+        <circle cx="700" cy="40" r="11" fill="#005581"/>
+        <circle cx="900" cy="40" r="11" fill="#005581"/>
+      </svg>
+      <div class="legs">
+        <div class="leg"><h3>Primavera</h3><ul><li>Rimini</li><li>Ravenna</li><li>Chioggia</li><li>Venezia</li><li>Croazia</li><li>Senigallia</li></ul></div>
+        <div class="leg"><h3>Giugno</h3><ul><li>Tremiti</li><li>Gargano</li><li>Trani</li><li>Bari</li><li>Lecce</li><li>Otranto</li></ul></div>
+        <div class="leg hot"><h3>Luglio</h3><ul><li>Napoli</li><li>Coppa America</li></ul></div>
+        <div class="leg"><h3>Agosto</h3><ul><li>Amalfi</li><li>Capri</li></ul></div>
+        <div class="leg"><h3>Settembre</h3><ul><li>Sardegna</li><li>Liguria</li><li>Montecarlo</li><li>Cannes</li><li>Genova</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tappa" id="tappa">
+    <div class="wrap">
+      <span class="tag">Ogni tappa</span>
+      <h2 class="big">Lo stesso schema, in ogni porto</h2>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Arrivo</h3><p>Un evento programmato all’ingresso in porto: la barca arriva e il porto se ne accorge.</p></div>
+        <div class="step"><b>02</b><h3>Hospitality</h3><p>Feste, cene e prove a bordo. Ci si ferma qualche giorno, senza fretta.</p></div>
+        <div class="step"><b>03</b><h3>Incontri</h3><p>Personaggi locali, pescatori ed esperti che confidano i loro segreti; visite nell’entroterra.</p></div>
+        <div class="step"><b>04</b><h3>Ripartenza</h3><p>Si salpa con un ospite a bordo per un tratto di viaggio, e il racconto continua.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec incontri" id="incontri">
+    <div class="wrap grid">
+      <img src="media/onde.jpg" alt="Onde che si frangono in un mare turchese">
+      <div>
+        <span class="tag">Gli incontri</span>
+        <h2 class="big">Il mare lo racconta chi ci vive</h2>
+        <div class="rows">
+          <div class="row"><h3>Chi lavora il mare</h3><p>Pescatori e gente di porto che portano a bordo storie e segreti della costa.</p></div>
+          <div class="row"><h3>Chi ha fatto la barca</h3><p>Il maestro velaio che consegna una vela nuova e resta qualche giorno a bordo con la sua crew.</p></div>
+          <div class="row"><h3>Chi la porta</h3><p>Un comandante d’eccezione che prende il timone lungo la costa ligure.</p></div>
+          <div class="row"><h3>Chi conosce il luogo</h3><p>Esperti locali e visite nell’entroterra: l’Italia vista da chi la abita.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ospiti" id="ospiti">
+    <div class="wrap">
+      <span class="tag turq">Gli ospiti</span>
+      <h2 class="big">Ogni tappa, qualcuno di nuovo a bordo</h2>
+      <div class="guest"><h3>VIP</h3><p>Un ospite d’eccezione sale a bordo e racconta il suo mare.</p></div>
+      <div class="guest"><h3>Influencer</h3><p>Un creator che si è conquistato il posto con un contest tra creator.</p></div>
+      <div class="guest"><h3>Contest</h3><p>La community partecipa e sceglie: il viaggio entra nei social prima ancora di partire.</p></div>
+    </div>
+  </section>
+
+  <section class="sec serie" id="serie">
+    <div class="wrap">
+      <span class="tag">La campagna social</span>
+      <h2 class="big">Una serie, non una vetrina</h2>
+      <p class="lead">Un racconto a puntate che segue il viaggio giorno dopo giorno. Ogni formato porta un valore di STRAMBA e può ospitare uno sponsor che lo condivide.</p>
+      <div class="cards">
+        <article class="card"><h3>Alba senza motore</h3><p>Solo il suono di acqua e vento, nessun parlato.</p><small>Amore per il mare</small></article>
+        <article class="card b"><h3>Chi c’è a bordo</h3><p>Un ritratto per volta: una persona mentre fa il suo mestiere.</p><small>Unicità di talento e carattere</small></article>
+        <article class="card"><h3>Il pescatore</h3><p>L’incontro in porto o in baia con chi il mare lo lavora.</p><small>Contatto autentico</small></article>
+        <article class="card b"><h3>Dove solo a vela</h3><p>L’arrivo in una baia o in un’area protetta che a motore non si raggiunge.</p><small>Innovazione, pianeta</small></article>
+        <article class="card c"><h3>Un gesto</h3><p>Una manovra ripresa per intero, senza fatica visibile.</p><small>Comodità, intelligenza</small></article>
+        <article class="card"><h3>Notte in marina</h3><p>Festa ripresa a mano, rumore e luce.</p><small>Intensità</small></article>
+        <article class="card b"><h3>Lo sguardo del porto</h3><p>Futura entra e la gente sul molo si volta.</p><small>Protagonisti senza cercarlo</small></article>
+        <article class="card s"><h3>La puntata firmata</h3><p>Un episodio costruito insieme a uno sponsor, attorno a un suo valore.</p><small>La tua</small></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sponsor" id="sponsor">
+    <div class="wrap">
+      <span class="tag">Come esserci</span>
+      <h2 class="big">Tre modi di salire a bordo</h2>
+      <div class="forms">
+        <div class="form"><h3>Presenza in scena</h3><p>Un oggetto o un gesto del vostro marchio entra in una puntata che ne condivide il valore, senza inquadrature dedicate.</p></div>
+        <div class="form"><h3>Ospite del racconto</h3><p>Una vostra persona o un vostro prodotto diventa protagonista di una puntata, a bordo, in porto o in un incontro.</p></div>
+        <div class="form"><h3>Puntata firmata</h3><p>Un episodio ideato con voi attorno a un vostro valore, girato e montato con la nostra voce.</p></div>
+      </div>
+      <p class="note">Hospitality a bordo, eventi nei porti e prove in mare si costruiscono insieme a ogni sponsor.</p>
+    </div>
+  </section>
+
+  <section class="sec budget" id="budget">
+    <div class="wrap">
+      <span class="tag turq">Parliamone</span>
+      <h2 class="big">Il programma lo costruiamo insieme</h2>
+      <p class="lead">Ogni sponsor partecipa con una quota da definire insieme, in base a presenza, ospitalità e puntate.</p>
+      <a class="cta" href="https://www.stramba.it" target="_blank" rel="noopener">Parla con STRAMBA</a>
+    </div>
+  </section>
+
+  <section class="sec end" aria-label="Chiusura">
+    <div class="wrap">
+      <blockquote>«Le vent se lève, il faut tenter de vivre.»<cite>Paul Valéry</cite></blockquote>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="media/stramba-white.png" alt="STRAMBA" width="88" height="46">
+    <p>A new sea-experience · from love and respect for the planet</p>
+  </div>
+</footer>
+
+<audio id="bgm" loop preload="none" src="media/colonna-sonora.mp3"></audio>
+
+<script>
+(function(){
+  var hero=document.getElementById('heroVideo');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video').forEach(function(v){
+    v.muted=true;
+    if(reduce){v.pause();}
+    else{var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  });
+
+  /* colonna sonora: usa media/colonna-sonora.mp3 se c'è, altrimenti un tappeto sonoro generato */
+  var btn=document.getElementById('sound'),lab=document.getElementById('soundLabel'),audio=document.getElementById('bgm');
+  var on=false,synth=null;
+
+  function startSynth(){
+    var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    var ctx=new AC(),t=ctx.currentTime;
+    var master=ctx.createGain();master.gain.setValueAtTime(0,t);master.gain.linearRampToValueAtTime(0.16,t+3);master.connect(ctx.destination);
+    var lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=700;lp.Q.value=0.7;lp.connect(master);
+    var lfo=ctx.createOscillator();lfo.frequency.value=0.07;var lg=ctx.createGain();lg.gain.value=350;lfo.connect(lg);lg.connect(lp.frequency);lfo.start();
+    [146.83,220,293.66,369.99,440].forEach(function(f,i){
+      [-6,6].forEach(function(d){
+        var o=ctx.createOscillator();o.type=i%2?'triangle':'sawtooth';o.frequency.value=f;o.detune.value=d;
+        var g=ctx.createGain();g.gain.value=0.07;o.connect(g);g.connect(lp);o.start();
+      });
+    });
+    var len=ctx.sampleRate*4,buf=ctx.createBuffer(1,len,ctx.sampleRate),data=buf.getChannelData(0);
+    for(var i=0;i<len;i++)data[i]=Math.random()*2-1;
+    var src=ctx.createBufferSource();src.buffer=buf;src.loop=true;
+    var bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=500;bp.Q.value=0.5;
+    var ng=ctx.createGain();ng.gain.value=0.05;
+    var l2=ctx.createOscillator();l2.frequency.value=0.11;var l2g=ctx.createGain();l2g.gain.value=0.04;l2.connect(l2g);l2g.connect(ng.gain);l2.start();
+    src.connect(bp);bp.connect(ng);ng.connect(master);src.start();
+    synth={ctx:ctx,master:master};
+  }
+  function stopSynth(){
+    if(!synth)return;var c=synth.ctx,m=synth.master,now=c.currentTime;
+    m.gain.cancelScheduledValues(now);m.gain.setValueAtTime(m.gain.value,now);m.gain.linearRampToValueAtTime(0,now+0.8);
+    setTimeout(function(){try{c.close();}catch(e){}},1000);synth=null;
+  }
+  function turnOn(){
+    on=true;btn.setAttribute('aria-pressed','true');lab.textContent='Suono on';
+    var done=false;
+    function fallback(){if(done||!on)return;done=true;startSynth();}
+    var timer=setTimeout(fallback,1500);
+    var p;try{p=audio.play();}catch(e){p=null;}
+    if(p&&p.then){p.then(function(){done=true;clearTimeout(timer);}).catch(function(){clearTimeout(timer);fallback();});}
+    else{clearTimeout(timer);fallback();}
+  }
+  function turnOff(){
+    on=false;btn.setAttribute('aria-pressed','false');lab.textContent='Suono';
+    try{audio.pause();}catch(e){}
+    stopSynth();
+  }
+  btn.addEventListener('click',function(){on?turnOff():turnOn();});
+})();
+</script>
