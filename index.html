@@ -2,142 +2,208 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="STRAMBA — wing propulsion technology for yachts and cargo ships. the blue, through the wings.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>STRAMBA Yachts — Futura</title>
-<meta name="description" content="STRAMBA Yachts — Futura F TYPE 69. The sea, without pollution. Book a test sail. Made in Italy.">
-<meta property="og:title" content="STRAMBA Yachts — Futura">
-<meta property="og:description" content="Curves make you fly. Book a test sail on Futura.">
-<meta property="og:image" content="https://stramba.yachts/assets/futura-sail.jpg">
-<link rel="preload" href="assets/fonts/jost-latin-200-normal.woff2" as="font" type="font/woff2" crossorigin>
+<title>STRAMBA — the blue, through the wings</title>
+<link rel="alternate" hreflang="it" href="https://stramba.it/it/">
+<link rel="alternate" hreflang="en" href="https://stramba.it/">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+nav .lang{font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;opacity:.85;margin-left:4px}nav .lang b{font-weight:500;opacity:1}nav .lang span{opacity:.5}
+nav ul a.lock::before{content:"";display:inline-block;width:9px;height:11px;margin-right:7px;vertical-align:-1px;background:currentColor;-webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 11"><path d="M2 5V3.5a2.5 2.5 0 015 0V5h1v6H1V5h1zm1 0h3V3.5a1.5 1.5 0 00-3 0V5z"/></svg>') center/contain no-repeat;mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 11"><path d="M2 5V3.5a2.5 2.5 0 015 0V5h1v6H1V5h1zm1 0h3V3.5a1.5 1.5 0 00-3 0V5z"/></svg>') center/contain no-repeat}
+
+/* hero with the blue band from the Futura sketch */
+.ghero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--black)}
+.band{position:absolute;left:6%;right:6%;top:50%;height:22vh;transform:translateY(-50%);
+  background:linear-gradient(100deg,#0d5fa8 0%,#1583d8 45%,#2b97e6 70%,#0f67b3 100%);
+  -webkit-mask:repeating-linear-gradient(115deg,#000 0 3px,rgba(0,0,0,.82) 3px 5px);mask:repeating-linear-gradient(115deg,#000 0 3px,rgba(0,0,0,.82) 3px 5px);opacity:.95}
+.ghero .hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ghero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,18,32,.35) 0%,rgba(10,18,32,.15) 50%,rgba(18,15,18,.75) 100%)}
+.ghero .wrap{position:relative;z-index:2;width:100%}
+.ghero .pre{font-size:13px;letter-spacing:.42em;text-transform:uppercase;margin-bottom:26px;font-weight:400;opacity:.85}
+.ghero h1{font-size:clamp(56px,10vw,150px);line-height:.95;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.ghero .mission{margin-top:34px;font-size:clamp(17px,2vw,22px);max-width:560px;opacity:.88}
+.scroll{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.4em;text-transform:uppercase;opacity:.6;z-index:2}
+
+/* doors */
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--black)}
+.door{position:relative;min-height:78vh;display:flex;align-items:flex-end;text-decoration:none;overflow:hidden;background:#15121a}
+.door .bg{position:absolute;inset:0;background:center/cover;transition:transform .8s ease}
+.door:hover .bg{transform:scale(1.04)}
+.door::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,18,0) 30%,rgba(18,15,18,.88) 100%)}
+.door .in{position:relative;z-index:2;padding:40px 36px}
+.door .k{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--yellow);font-weight:400}
+.door h3{font-size:clamp(34px,3.4vw,52px);margin:12px 0 10px}
+.door p{color:rgba(255,255,255,.75);max-width:340px;font-size:16px}
+.door .go{display:inline-block;margin-top:22px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px}
+.door.soon{cursor:default}.door.soon .go{opacity:.5;border-bottom-style:dashed}
+.waps-bg{background:radial-gradient(ellipse at 70% 40%,#1e4f7a 0%,#0e2236 55%,#0a1522 100%)}
+.waps-bg svg{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);width:88%;opacity:.9}
+.india-bg{background:radial-gradient(ellipse at 30% 30%,#3a2a10 0%,#1d1610 60%,#120f12 100%)}
+@media (max-width:900px){.doors{grid-template-columns:1fr}.door{min-height:62vh}}
+
+/* technology */
+.tech{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.pillars div{padding:22px 18px 0 0}
+.pillars b{display:block;font-weight:200;font-size:30px}
+.pillars span{font-size:14px;color:var(--grey)}
+@media (max-width:900px){.tech{grid-template-columns:1fr;gap:36px}}
+
+/* investors */
+.inv{background:var(--paper);color:var(--black)}
+.inv .kicker{color:var(--blue)}
+.inv .body{color:#4a4f56}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+.card{background:#fff;border:1px solid #e3e7ec;border-radius:6px;padding:30px}
+.card i{font-style:normal;font-size:12px;letter-spacing:.3em;color:var(--blue);font-weight:500}
+.card h3{font-size:28px;margin:10px 0 10px}
+.card p{color:#4a4f56;font-size:16px}
+.card a{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--black);text-decoration:none;border-bottom:1px solid var(--black)}
+.news{display:grid;grid-template-columns:1fr;gap:32px;margin-top:80px;align-items:start}
+.news iframe{width:100%;display:block}
+.sh{margin-top:80px;background:var(--black);color:#fff;border-radius:8px;padding:56px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.sh .body{color:rgba(255,255,255,.72)}
+.sh ul{list-style:none}
+.sh li{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px;color:rgba(255,255,255,.85)}
+.sh li b{color:var(--yellow);font-weight:400;margin-right:10px}
+@media (max-width:900px){.cards,.news,.sh{grid-template-columns:1fr}.sh{padding:32px}}
+
+footer .sites{display:flex;gap:22px;flex-wrap:wrap}
+</style>
 </head>
 <body>
 
 <nav id="nav">
   <div class="wrap">
-    <a href="#top" class="logo">STR<span class="a">A</span>MBA<small>YACHTS</small></a>
+    <a href="#top" class="logo"><img src="assets/logo-white.png" alt="STRAMBA" width="115" height="60"></a>
     <ul>
-      <li><a href="#futura">Futura</a></li>
-      <li><a href="#prova">Test sail</a></li>
-      <li><a href="#calendario">Calendar</a></li>
-      <li><a href="#crew">Crew</a></li>
+      <li><a href="#worlds">Yachts</a></li>
+      <li><a href="#worlds">WAPS</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#investors">Investors</a></li>
+      <li><a href="/soci/" class="lock">Shareholders</a></li>
     </ul>
-    <a href="#contatti" class="btn btn-y">Book a test sail</a>
+    <div style="display:flex;align-items:center;gap:18px"><a class="lang" href="it/" hreflang="it"><b>EN</b> <span>/</span> IT</a><a href="#contact" class="btn btn-o">Contact</a></div>
   </div>
 </nav>
 
-<header class="hero" id="top">
-  <video autoplay muted loop playsinline poster="assets/futura-virata-poster.jpg">
-    <source src="assets/futura-virata.mp4" type="video/mp4">
-  </video>
+<header class="ghero" id="top">
+  <video class="hv" autoplay muted loop playsinline poster="assets/mare-poster.jpg"><source src="assets/mare.mp4" type="video/mp4"></video>
+  <div class="shade"></div>
   <div class="wrap">
-    <div class="eyebrow">Futura · F TYPE 69 · <b>Made in Italy</b></div>
-    <h1>curves make<br>you fly</h1>
-    <p>The sea, without pollution. A new dimension of comfort to enjoy the magic of the sea — respecting the planet.</p>
-    <div class="ctas">
-      <a href="#contatti" class="btn btn-y">Book a test sail</a>
-      <a href="#futura" class="btn btn-o">Discover Futura</a>
-    </div>
+    <div class="pre">Yachting &amp; Shipping</div>
+    <h1>the blue,<br>through the wings</h1>
+    <p class="mission">Setting free the energy gifted by the wind and giving wings to every vessel.</p>
   </div>
+  <div class="scroll">Choose your world ↓</div>
 </header>
 
-<section class="concept" id="futura">
-  <div class="wrap head">
+<section class="doors" id="worlds" style="padding:0">
+  <a class="door" href="https://stramba.yachts">
+    <div class="bg" style="background-image:url(assets/futura-sail.jpg)"></div>
+    <div class="in">
+      <div class="k">Made in Italy</div>
+      <h3>STRAMBA Yachts</h3>
+      <p>Futura — from the dream to a yacht with incredible performance. Book a test sail.</p>
+      <span class="go">stramba.yachts →</span>
+    </div>
+  </a>
+  <a class="door" href="https://www.stramba.blue">
+    <div class="bg" style="background-image:url(assets/nave.jpg);background-position:28% 50%"></div>
+    <div class="in">
+      <div class="k">Shipping</div>
+      <h3>STRAMBA WAPS</h3>
+      <p>Wind Assisted Propulsion Systems for cargo ships — to save fuel and emissions.</p>
+      <span class="go">stramba.blue →</span>
+    </div>
+  </a>
+  <div class="door soon">
+    <div class="bg india-bg"></div>
+    <div class="in">
+      <div class="k">Made in India</div>
+      <h3>STRAMBA India</h3>
+      <p>Industrialising WAPS for the global fleet.</p>
+      <span class="go">Coming soon</span>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="wrap tech">
     <div>
-      <div class="kicker">The prototype</div>
-      <h2>A new concept</h2>
+      <div class="kicker">One technology, two worlds</div>
+      <h2>Nothing is free like the wind</h2>
+      <p class="body">Yachts and cargo ships are opposites in mindset, but they share the same sea, the same planet — and the same patented wing technology, developed in Italy by STRAMBA.</p>
+      <div class="pillars">
+        <div><b>Space</b><span>Decks free from rigging and hardware</span></div>
+        <div><b>Balance</b><span>Reduced heeling, more comfort and safety</span></div>
+        <div><b>Performance</b><span>More lift from the wind, less fuel burnt</span></div>
+      </div>
     </div>
-    <div>
-      <p class="body">Reduced heeling, enhanced sailing comfort and safety, wide-open spaces for guests with endless design possibilities… and high performance.</p>
-    </div>
-  </div>
-  <img class="sketch" src="assets/futura-sketch.jpg" alt="Futura F TYPE 69 — design sketch" loading="lazy">
-</section>
-
-<section class="numbers">
-  <div class="wrap grid-n">
-    <div><b>14,5<em> m</em></b><span>Length</span></div>
-    <div><b>4,65<em> m</em></b><span>Beam</span></div>
-    <div><b>2,4<em> m</em></b><span>Draft</span></div>
-    <div><b>69<em> m²</em></b><span>Free deck</span></div>
-    <div><b><em>+</em>40%</b><span>Sail lift</span></div>
-    <div><b><em>−</em>20%</b><span>Side slip</span></div>
+    <img src="assets/futura-sketch.jpg" alt="STRAMBA wing — design sketch" loading="lazy">
   </div>
 </section>
 
-<div class="split">
-  <div class="pic" style="background-image:url(assets/futura-deck.jpg)" role="img" aria-label="Futura deck at sunset"></div>
-  <div class="txt">
-    <div class="kicker">Fully customizable platform</div>
-    <h2>A deck free<br>from everything</h2>
-    <p class="body">The deck space is free from all rigging, hardware and structural elements, allowing complete design and customization freedom.</p>
-    <p class="body">Processes, details, experiences: everything revolves around design. This is what inspires us when we imagine our yachts — and when we bring them to life.</p>
-  </div>
-</div>
-
-<div class="bleed">
+<section class="inv" id="investors">
   <div class="wrap">
-    <q>the blue,<br>through<br>the wings</q>
-    <small>Space · Balance · Performance</small>
-  </div>
-</div>
+    <div class="kicker">Investor Relations</div>
+    <h2>Investing in the wind</h2>
+    <p class="body">STRAMBA develops wing propulsion technology for two markets: premium sailing yachts and commercial shipping, where decarbonisation rules are turning wind into a necessity.</p>
 
-<section class="light" id="prova">
-  <div class="wrap">
-    <div class="kicker">Test sail</div>
-    <h2>Feel it on board</h2>
-    <p class="body">The best way to understand Futura is to sail it. Book a place on one of our test days.</p>
-    <div class="steps">
-      <div class="step"><i>01</i><h3>Choose when</h3><p>Pick the period and port you prefer from the calendar.</p></div>
-      <div class="step"><i>02</i><h3>We get back to you</h3><p>We confirm availability, time and meeting point.</p></div>
-      <div class="step"><i>03</i><h3>On board</h3><p>Sail with our crew and feel the wing at work.</p></div>
+    <div class="news">
+      <div>
+        <div class="kicker">Latest news</div>
+        <h2 style="font-size:40px">Certified updates</h2>
+        <p class="body">The full STRAMBA story, step by step: published and certified on Traspality.</p>
+      </div>
+      <iframe src="https://www.traspality.com/public.html?team=21cdbe5f-1c28-4d1c-bb89-f62ddc84123c&amp;embed=1" width="100%" height="800" frameborder="0" style="border-radius:16px;border:1px solid #e8e8e8;background:#fff" title="STRAMBA on Traspality" loading="lazy"></iframe>
+    </div>
+
+    <div class="sh">
+      <div>
+        <div class="kicker" style="color:var(--yellow)">Shareholders area</div>
+        <h2 style="font-size:44px">Behind the scenes, first</h2>
+        <p class="body">A private space for STRAMBA shareholders: the state of the art, the decisions, the next moves — and a direct line to ask.</p>
+        <div class="ctas" style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-y" href="/soci/">Enter the shareholders area</a><a class="btn btn-o" href="#contact">Request access</a></div>
+      </div>
+      <ul>
+        <li><b>→</b>Work in progress, step by step</li>
+        <li><b>→</b>Decisions and why we took them</li>
+        <li><b>→</b>Ask questions, get answers</li>
+        <li><b>→</b>Same information for every shareholder</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="light" id="calendario" style="padding-top:0">
-  <div class="wrap">
-    <div class="kicker">Futura Tour</div>
-    <h2>Where to find Futura</h2>
-    <div class="stops" id="stops"></div>
-  </div>
-</section>
-
-<section class="crew" id="crew">
-  <div class="wrap">
-    <div class="kicker">Futura Crew</div>
-    <h2>Join the crew</h2>
-    <p class="body">News from the yard, first access to test sail dates, invitations to on-board events. For those who want to follow Futura from the start.</p>
-    <div class="ctas" style="margin-top:32px"><a href="#contatti" class="btn btn-y" data-pick="Futura Crew">Join the crew</a></div>
-  </div>
-</section>
-
-<section class="form-sec" id="contatti">
+<section class="form-sec" id="contact">
   <div class="wrap form-grid">
     <div>
-      <div class="kicker">Get in touch</div>
-      <h2>Register your interest</h2>
-      <p class="body">Test sail, purchase, events, press or partnership: tell us what you are interested in and we will get back to you.</p>
+      <div class="kicker">Contact</div>
+      <h2>Talk to STRAMBA</h2>
+      <p class="body">Investors, partners, shipowners, press. Tell us who you are and we'll get back to you.</p>
     </div>
     <form id="form" novalidate>
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
-      <div class="full">
-        <span class="lbl">I'm interested in</span>
+      <div class="full"><span class="lbl">I am</span>
         <div class="chips">
-          <label><input type="checkbox" name="interesse" value="Test sail"> Test sail</label>
-          <label><input type="checkbox" name="interesse" value="Purchase"> Purchase</label>
-          <label><input type="checkbox" name="interesse" value="On-board events"> On-board events</label>
-          <label><input type="checkbox" name="interesse" value="Futura Crew"> Futura Crew</label>
-          <label><input type="checkbox" name="interesse" value="Press / partner"> Press / partner</label>
+          <label><input type="checkbox" name="profilo" value="Investor"> Investor</label>
+          <label><input type="checkbox" name="profilo" value="Shipowner"> Shipowner</label>
+          <label><input type="checkbox" name="profilo" value="Yacht client"> Yacht client</label>
+          <label><input type="checkbox" name="profilo" value="Partner"> Partner</label>
+          <label><input type="checkbox" name="profilo" value="Press"> Press</label>
         </div>
       </div>
       <div><label class="lbl" for="n">Full name</label><input id="n" name="name" required autocomplete="name"></div>
       <div><label class="lbl" for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+      <div><label class="lbl" for="c">Company</label><input id="c" name="azienda" autocomplete="organization"></div>
       <div><label class="lbl" for="p">Phone</label><input id="p" name="telefono" type="tel" autocomplete="tel"></div>
-      <div><label class="lbl" for="w">Preferred date / port</label><select id="w" name="data_preferita"><option value="">—</option></select></div>
       <div class="full"><label class="lbl" for="m">Message</label><textarea id="m" name="message"></textarea></div>
       <label class="check full"><input type="checkbox" id="privacy" required> <span>I have read the <a href="privacy.html" target="_blank">privacy policy</a>.</span></label>
-      <label class="check full"><input type="checkbox" name="newsletter" value="Yes"> <span>I'd like to receive updates from STRAMBA Yachts (optional).</span></label>
       <div class="full"><button class="btn btn-y" type="submit" id="send">Send</button></div>
       <div class="msg" id="msg"></div>
     </form>
@@ -147,66 +213,30 @@
 <footer>
   <div class="wrap">
     <div>STRAMBA S.r.l. · VAT IT04156810402 · Riccione (RN), Italy</div>
-    <div>Part of <a href="https://www.stramba.blue">STRAMBA</a> · <a href="privacy.html">Privacy &amp; cookies</a></div>
+    <div class="sites"><a href="https://stramba.yachts">Yachts</a><a href="https://www.stramba.blue">WAPS</a><a href="#investors">Investors</a><a href="/soci/">Shareholders</a><a href="privacy.html">Privacy</a></div>
   </div>
 </footer>
 
 <script>
-/* Chiave Web3Forms: fa da "alias" dell'email di destinazione, che così non compare nel sito. */
+/* Chiave Web3Forms: alias dell'email di destinazione, che così non compare nel sito. */
 const WEB3FORMS_KEY = "04ab7bff-616c-4919-b332-3deb599f6a28";
-
-const nav = document.getElementById('nav');
-addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60), {passive:true});
-
-/* Calendario: si modifica nel file eventi.json */
-function renderEventi(list){
-  const box = document.getElementById('stops'), sel = document.getElementById('w');
-  const esc = s => String(s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  if(!list.length){ box.innerHTML = '<p class="empty">New dates coming soon. Leave your details to be notified.</p>'; }
-  else box.innerHTML = list.map(ev => `
-    <div class="stop">
-      <div class="when">${esc(ev.quando)}</div>
-      <div class="where">${esc(ev.dove)}${ev.nota ? `<div style="font-size:16px;color:#4a4f56;font-weight:300">${esc(ev.nota)}</div>` : ''}</div>
-      <a href="#contatti" class="btn btn-b" data-when="${esc(ev.quando + ' · ' + ev.dove)}">Book</a>
-    </div>`).join('');
-  list.forEach(ev => { const o = document.createElement('option'); o.textContent = ev.quando + ' · ' + ev.dove; sel.appendChild(o); });
-  const o = document.createElement('option'); o.textContent = 'Other / to be arranged'; sel.appendChild(o);
-}
-fetch('eventi.json', {cache:'no-store'}).then(r => r.json()).then(renderEventi).catch(() => renderEventi(window.EVENTI_FALLBACK || []));
-
-/* I pulsanti "Book" precompilano il modulo */
-document.addEventListener('click', e => {
-  const b = e.target.closest('[data-when],[data-pick]'); if(!b) return;
-  if(b.dataset.when){ document.getElementById('w').value = b.dataset.when; document.querySelector('input[value="Test sail"]').checked = true; }
-  if(b.dataset.pick){ document.querySelector(`input[value="${b.dataset.pick}"]`).checked = true; }
-});
-
-/* Invio modulo */
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
 document.getElementById('form').addEventListener('submit', async e => {
   e.preventDefault();
-  const f = e.target, F = n => f.elements[n], msg = document.getElementById('msg'), btn = document.getElementById('send');
-  const show = (cls, t) => { msg.className = 'msg ' + cls; msg.textContent = t; };
-  if(!F('name').value.trim() || !F('email').checkValidity() || !F('email').value){ return show('err', 'Please enter a valid name and email.'); }
-  if(!document.getElementById('privacy').checked){ return show('err', 'Please confirm you have read the privacy policy.'); }
-  const interessi = [...f.querySelectorAll('input[name=interesse]:checked')].map(i => i.value).join(', ') || '—';
-  const data = {
-    access_key: WEB3FORMS_KEY,
-    subject: 'stramba.yachts — new request: ' + interessi,
-    from_name: 'STRAMBA Yachts website',
-    name: F('name').value.trim(), email: F('email').value.trim(), telefono: F('telefono').value.trim() || '—',
-    interessi, data_preferita: F('data_preferita').value || '—',
-    message: F('message').value.trim() || '—',
-    newsletter: F('newsletter').checked ? 'Yes' : 'No',
-    botcheck: F('botcheck').checked
-  };
-  btn.disabled = true; btn.textContent = 'Sending…';
-  try{
-    const r = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json'}, body: JSON.stringify(data)});
-    const j = await r.json();
-    if(j.success){ f.reset(); show('ok', 'Thank you! We have received your request and will get back to you soon.'); }
-    else throw 0;
-  }catch(_){ show('err', 'Sending failed. Please try again in a few minutes.'); }
-  btn.disabled = false; btn.textContent = 'Send';
+  const f=e.target, F=n=>f.elements[n], msg=document.getElementById('msg'), btn=document.getElementById('send');
+  const show=(c,t)=>{msg.className='msg '+c; msg.textContent=t;};
+  if(!F('name').value.trim()||!F('email').value||!F('email').checkValidity()) return show('err','Please enter a valid name and email.');
+  if(!document.getElementById('privacy').checked) return show('err','Please confirm you have read the privacy policy.');
+  const profilo=[...f.querySelectorAll('input[name=profilo]:checked')].map(i=>i.value).join(', ')||'—';
+  const data={access_key:WEB3FORMS_KEY, subject:'stramba.it — new contact: '+profilo, from_name:'STRAMBA website',
+    name:F('name').value.trim(), email:F('email').value.trim(), azienda:F('azienda').value.trim()||'—',
+    telefono:F('telefono').value.trim()||'—', profilo, message:F('message').value.trim()||'—', botcheck:F('botcheck').checked};
+  btn.disabled=true; btn.textContent='Sending…';
+  try{ const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
+    const j=await r.json(); if(!j.success) throw 0; f.reset(); show('ok','Thank you! We have received your message and will get back to you soon.'); }
+  catch(_){ show('err','Sending failed. Please try again in a few minutes.'); }
+  btn.disabled=false; btn.textContent='Send';
 });
 </script>
 </body>
