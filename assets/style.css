@@ -136,3 +136,11 @@ footer a{text-decoration:none;color:#fff}
 .legal ul{padding-left:22px}
 .legal .upd{color:var(--grey);font-size:14px;letter-spacing:.1em;text-transform:uppercase}
 .legal a{color:var(--blue)}
+
+/* menu su mobile: seconda riga scorrevole sotto il logo */
+@media (max-width:860px){
+  nav .wrap{flex-wrap:wrap;height:auto;min-height:60px;padding-top:12px;padding-bottom:4px;row-gap:6px}
+  nav ul{display:flex;order:3;width:100%;gap:15px;font-size:11px;letter-spacing:.1em;overflow-x:auto;white-space:nowrap;padding:4px 0 10px;scrollbar-width:none}
+  nav ul::-webkit-scrollbar{display:none}
+  nav.solid{background:rgba(18,15,18,.94)}
+}
