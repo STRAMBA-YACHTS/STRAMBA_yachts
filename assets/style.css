@@ -144,3 +144,7 @@ footer a{text-decoration:none;color:#fff}
   nav ul::-webkit-scrollbar{display:none}
   nav.solid{background:rgba(18,15,18,.94)}
 }
+
+/* selettore lingua IT/EN */
+nav .lg{opacity:.55;letter-spacing:.14em}
+nav .lg.on{opacity:1;color:var(--yellow)}

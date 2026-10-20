@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="robots" content="noindex,nofollow">
+<title>Dire mare · Area sponsor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap">
+<style>
+/* Concept: poster-scale type that swings between hairline (silenzio) and black (festa), sea blues cut by sun-yellow and turquoise blocks. Single dark-first look. */
+:root{
+  --abyss:#071E2D; --deep:#0B3550; --sea:#005581; --foam:#F7F3E8; --ink:#0A2B3D;
+  --sun:#FFC800; --turq:#1EC8BE; --mist:#CFE3E6;
+  --display:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--abyss);color:var(--foam);font-family:var(--display);font-size:1.0625rem;line-height:1.55;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--abyss)}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+.wrap{width:100%;max-width:1280px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(64px,9vw,128px)}
+.tag{display:inline-block;background:var(--sun);color:var(--abyss);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;padding:.65em 1.1em}
+.tag.turq{background:var(--turq)}
+.big{font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.02em;text-wrap:balance}
+.lead{font-size:clamp(1.1rem,1.6vw,1.4rem);line-height:1.55;font-weight:400;color:var(--mist);max-width:60ch}
+.y{color:var(--sun)}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,30,45,.9);backdrop-filter:blur(10px)}
+.bar .wrap{display:flex;align-items:center;gap:28px;padding-block:10px}
+.logo img{height:46px;width:auto}
+.bar nav{display:flex;gap:28px;margin-left:auto}
+.bar nav a{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.bar nav a:hover{border-color:var(--sun)}
+.sound{display:flex;align-items:center;gap:10px;background:transparent;border:2px solid var(--sun);color:var(--sun);font:700 .78rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.8em 1.1em;cursor:pointer}
+.sound[aria-pressed="true"]{background:var(--sun);color:var(--abyss)}
+.eq{display:flex;align-items:flex-end;gap:3px;height:14px}
+.eq i{display:block;width:3px;background:currentColor;height:4px}
+.sound[aria-pressed="true"] .eq i{animation:eq 900ms ease-in-out infinite}
+.sound[aria-pressed="true"] .eq i:nth-child(2){animation-delay:-300ms}
+.sound[aria-pressed="true"] .eq i:nth-child(3){animation-delay:-600ms}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+@media(max-width:760px){.bar nav{display:none}.sound{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:clamp(580px,86vh,900px);display:flex;flex-direction:column;justify-content:flex-end;background:var(--deep) url(media/aerea-verde-poster.jpg) center/cover no-repeat}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,30,45,.93),rgba(7,30,45,.55) 55%,rgba(7,30,45,.05)),linear-gradient(0deg,rgba(7,30,45,.75),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,32px);padding-block:clamp(56px,9vw,112px) clamp(28px,4vw,48px)}
+.hero h1{font-size:clamp(3.6rem,14vw,11.5rem)}
+.hero .lead{color:var(--foam)}
+.sticker{position:absolute;z-index:3;right:max(16px,env(safe-area-inset-right,0px));top:clamp(24px,9vw,120px);background:var(--sun);color:var(--abyss);padding:20px 24px;transform:rotate(-7deg);max-width:min(340px,70vw);animation:wob 7s ease-in-out infinite}
+.sticker b{display:block;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+.sticker span{display:block;font-weight:900;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1.05;text-transform:uppercase;margin-top:6px}
+@keyframes wob{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(-4deg) translateY(-6px)}}
+.marquee{position:relative;z-index:2;background:var(--turq);color:var(--abyss);overflow:hidden;white-space:nowrap}
+.marquee div{display:inline-flex;gap:0;animation:run 32s linear infinite;padding-block:14px}
+.marquee span{font-weight:900;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;padding-right:2.2em}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* veicolo */
+.veicolo{background:var(--abyss)}
+.veicolo .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,96px);align-items:center}
+.veicolo h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:24px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.tile{background:var(--sea);padding:22px}
+.tile h3{font-weight:900;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;color:var(--sun)}
+.tile p{margin-top:8px;font-size:.98rem;line-height:1.4}
+.photo{position:relative;box-shadow:18px 18px 0 var(--sun)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+@media(max-width:900px){.veicolo .grid{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.photo{margin-right:18px}}
+
+/* viaggio */
+.viaggio{background:linear-gradient(180deg,rgba(7,30,45,.9),rgba(7,30,45,.45) 55%,rgba(7,30,45,.88)),url(../assets/tour/sardegna.jpg) center/cover}
+.viaggio .wrap{display:flex;flex-direction:column;gap:clamp(28px,4vw,48px)}
+.viaggio h2{font-size:clamp(3rem,11.5vw,9.5rem)}
+.viaggio .lead{border-left:10px solid var(--turq);padding-left:clamp(20px,3vw,40px);color:var(--foam);max-width:62ch}
+
+/* video */
+.film{background:var(--deep)}
+.film .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.film h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px}
+.screen{border:2px solid var(--sun);background:#000}
+.screen video{width:100%;aspect-ratio:16/9;object-fit:cover}
+@media(max-width:900px){.film .grid{grid-template-columns:1fr}}
+
+/* chiaroscuro */
+.duo{display:grid;grid-template-columns:1fr 1fr;transition:grid-template-columns .5s ease}
+.duo:has(.quiet:hover){grid-template-columns:1.35fr 1fr}
+.duo:has(.fest:hover){grid-template-columns:1fr 1.35fr}
+.pane{min-height:clamp(380px,46vw,600px);padding:clamp(28px,5vw,72px) max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.quiet{background:linear-gradient(180deg,rgba(7,30,45,.78),rgba(0,85,129,.7)),url(../assets/tour/amalfi-mare.jpg) center/cover;color:var(--foam)}
+.quiet h2{font-weight:200;font-size:clamp(3rem,9vw,8rem);line-height:.95;letter-spacing:-.01em;text-transform:lowercase}
+.fest{background:linear-gradient(135deg,rgba(30,200,190,.8),rgba(255,200,0,.74)),url(../assets/tour/marina-festa.jpg) center/cover;color:var(--abyss)}
+.fest h2{font-weight:900;font-size:clamp(3rem,9vw,8rem);line-height:.9;letter-spacing:-.03em;text-transform:uppercase}
+.pane .tag{align-self:flex-start;background:var(--abyss);color:var(--sun)}
+.pane p{font-size:clamp(1.05rem,1.4vw,1.25rem);max-width:34ch}
+@media(max-width:760px){.duo,.duo:has(.quiet:hover),.duo:has(.fest:hover){grid-template-columns:1fr}.pane{padding-inline:max(16px,env(safe-area-inset-left,0px))}}
+
+/* rotta */
+.rotta{background:var(--foam);color:var(--ink)}
+.rotta h2{font-size:clamp(2.4rem,6.4vw,5.6rem);margin-block:22px 8px}
+.rotta .lead{color:#2F4A5C}
+.wave{display:block;width:100%;height:auto;margin-top:36px}
+.legs{display:grid;grid-template-columns:repeat(5,1fr);margin-top:0}
+.leg{padding:22px 16px 28px}
+.leg h3{font-weight:900;font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:14px}
+.leg li{font-size:1.35rem;font-weight:400;line-height:1.4;padding-block:2px}
+.leg.hot{background:var(--abyss);color:var(--foam)}
+.leg.hot h3{color:var(--sun)}
+.leg.hot li:last-child{color:var(--sun);font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-top:6px}
+@media(max-width:900px){.wave{display:none}.legs{grid-template-columns:1fr 1fr;gap:8px;margin-top:32px}.leg{border-top:2px solid var(--sun)}.leg.hot{border-top:2px solid var(--turq)}}
+@media(max-width:520px){.legs{grid-template-columns:1fr}}
+
+/* tappa */
+.tappa{background:var(--sun);color:var(--abyss)}
+.tappa h2{font-size:clamp(2.4rem,6.4vw,5.6rem);margin-top:22px}
+.tappa .tag{background:var(--abyss);color:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(32px,5vw,64px)}
+.step{background:var(--abyss);color:var(--foam);padding:28px 24px 32px;display:flex;flex-direction:column;gap:12px}
+.step b{font-weight:900;font-size:clamp(3.2rem,6vw,5rem);line-height:.9;color:var(--turq)}
+.step h3{font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase}
+.step p{font-size:1rem;line-height:1.5;color:var(--mist)}
+@media(max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* incontri */
+.incontri{background:var(--abyss)}
+.incontri .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,96px);align-items:center}
+.incontri img{width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:14px solid var(--turq)}
+.incontri h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px 28px}
+.rows{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:minmax(0,15ch) minmax(0,1fr);gap:8px 28px;padding-block:18px;border-top:2px solid rgba(207,227,230,.28)}
+.row h3{font-weight:900;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sun)}
+.row p{color:var(--mist);line-height:1.5}
+@media(max-width:900px){.incontri .grid{grid-template-columns:1fr}.incontri img{aspect-ratio:16/10}}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+
+/* ospiti */
+.ospiti{background:var(--deep)}
+.ospiti h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-block:22px 40px}
+.guest{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:12px 40px;align-items:center;padding-block:clamp(14px,2vw,26px);border-top:3px solid var(--foam)}
+.guest h3{font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,10.5vw,8.6rem);line-height:.9;letter-spacing:-.03em;overflow-wrap:anywhere}
+.guest p{color:var(--mist);max-width:34ch}
+.guest:nth-of-type(1) h3{color:var(--foam)}
+.guest:nth-of-type(2) h3{color:var(--sun)}
+.guest:nth-of-type(3) h3{color:var(--turq)}
+@media(max-width:760px){.guest{grid-template-columns:1fr}}
+
+/* serie */
+.serie{background:var(--foam);color:var(--ink)}
+.serie h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:22px 14px}
+.serie .lead{color:#2F4A5C}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin-top:clamp(32px,4vw,56px)}
+.card{padding:24px 22px 26px;display:flex;flex-direction:column;gap:12px;min-height:250px;background:var(--abyss);color:var(--foam)}
+.card.b{background:var(--sea)}
+.card.c{background:var(--turq);color:var(--abyss)}
+.card.s{background:var(--sun);color:var(--abyss)}
+.card h3{font-weight:900;font-size:1.45rem;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+.card p{font-size:1rem;line-height:1.45;flex:1}
+.card small{font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+
+/* sponsor */
+.sponsor{background:var(--deep)}
+.sponsor h2{font-size:clamp(2.4rem,6vw,5.2rem);margin-block:22px 40px}
+.forms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.form{padding:32px 26px 36px;display:flex;flex-direction:column;gap:14px;background:var(--abyss)}
+.form:nth-child(2){background:var(--turq);color:var(--abyss)}
+.form:nth-child(3){background:var(--sun);color:var(--abyss)}
+.form h3{font-weight:900;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1;text-transform:uppercase}
+.form p{line-height:1.5}
+.form:nth-child(1) p{color:var(--mist)}
+.note{margin-top:32px;font-size:1.15rem;max-width:62ch}
+@media(max-width:900px){.forms{grid-template-columns:1fr}}
+
+/* budget */
+.budget{background:var(--abyss);text-align:left}
+.budget h2{font-size:clamp(2.6rem,8vw,7rem);margin-block:24px 28px}
+.budget .lead{max-width:56ch}
+.cta{display:inline-block;margin-top:36px;background:var(--turq);color:var(--abyss);font-weight:900;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:1.15em 1.8em;transition:transform .2s}
+.cta:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--sun)}
+
+
+/* manifesto */
+.manifesto{background:var(--abyss)}
+.manifesto .wrap{display:flex;flex-direction:column;gap:clamp(18px,3vw,36px)}
+.manifesto .m1{font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.025em;font-size:clamp(2.8rem,10vw,8.6rem);text-wrap:balance}
+.manifesto .m2{font-size:clamp(1.2rem,2.2vw,1.9rem);line-height:1.4;max-width:34ch;color:var(--mist);border-left:10px solid var(--turq);padding-left:clamp(16px,2.4vw,32px)}
+.manifesto .m2 b{color:var(--sun);font-weight:900;text-transform:uppercase}
+.manifesto .m3{font-weight:200;font-size:clamp(3rem,10vw,8rem);line-height:.95;letter-spacing:-.02em}
+.manifesto .m4{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.8rem,4vw,3.2rem);color:var(--sun)}
+
+/* mosaico luoghi */
+.tappe{background:var(--abyss);padding-block:clamp(48px,7vw,96px) 0}
+.tappe .head{display:flex;flex-direction:column;align-items:flex-start;gap:20px;padding-bottom:clamp(24px,4vw,48px)}
+.tappe h2{font-size:clamp(2.4rem,6vw,5.2rem)}
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(180px,19vw,260px);gap:6px}
+.mosaic figure{position:relative;margin:0;background:center/cover;display:flex;align-items:flex-end}
+.mosaic figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,30,45,0) 60%,rgba(7,30,45,.55))}
+.mosaic figcaption{position:relative;z-index:2;margin:16px;background:var(--sun);color:var(--abyss);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;padding:.6em 1em}
+.m-a{grid-column:1/5;grid-row:1/3}.m-b{grid-column:5/10;grid-row:1}.m-c{grid-column:10/13;grid-row:1}
+.m-d{grid-column:5/9;grid-row:2}.m-e{grid-column:9/13;grid-row:2/4}.m-f{grid-column:1/9;grid-row:3}
+.m-g{grid-column:1/7;grid-row:4}.m-h{grid-column:7/13;grid-row:4}
+@media(max-width:860px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:190px}.mosaic figure{grid-column:auto!important;grid-row:auto!important}.m-a,.m-e{grid-row:span 2!important}}
+
+/* chiusura */
+.end{background:linear-gradient(180deg,rgba(7,30,45,.88),rgba(7,30,45,.7)),url(../assets/tour/venezia-notte.jpg) center/cover;text-align:center}
+.end blockquote{margin:0 auto;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(2.2rem,6vw,5rem);line-height:1.08;max-width:18ch;text-wrap:balance}
+.end cite{display:block;margin-top:24px;font-style:normal;font-weight:700;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sun)}
+.foot{background:var(--abyss);padding-block:36px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.foot img{height:44px;width:auto}
+.foot p{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mist)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sticker,.marquee div,.sound[aria-pressed="true"] .eq i{animation:none}
+  .duo{transition:none}
+}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="STRAMBA"><img src="media/stramba-white.png" alt="STRAMBA" width="88" height="46"></a>
+    <nav aria-label="Sections">
+      <a href="#viaggio">Journey</a>
+      <a href="#rotta">Route</a>
+      <a href="#serie">Series</a>
+      <a href="#sponsor">Sponsor</a>
+    </nav>
+    <span class="langsw" style="margin-left:auto;margin-right:14px;font-size:.78rem;font-weight:700;letter-spacing:.2em"><a href="index.html" style="color:#fff;text-decoration:none;opacity:0.55">IT</a> <a href="en.html" style="color:#fff;text-decoration:none;opacity:1">EN</a></span>
+    <button class="sound" id="sound" type="button" aria-pressed="false" aria-label="Turn the soundtrack on or off">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span id="soundLabel">Sound</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Dire mare, Futura Tour 2027">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="media/aerea-verde-poster.jpg" aria-hidden="true">
+      <source src="media/aerea-verde.mp4" type="video/mp4">
+    </video>
+    <div class="sticker"><b>April → September</b><span>Rimini → Côte d’Azur</span></div>
+    <div class="wrap">
+      <span class="tag">Futura Tour · Summer 2027</span>
+      <h1 class="big">Dire<br><span class="y">mare</span></h1>
+      <p class="lead">A whole summer discovering a new way of being at sea, in the liveliest ports of the Mediterranean.</p>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div>
+        <span>Silence</span><span>Celebration</span><span>Wind</span><span>Encounters</span><span>Dire mare</span>
+        <span>Silence</span><span>Celebration</span><span>Wind</span><span>Encounters</span><span>Dire mare</span>
+        <span>Silence</span><span>Celebration</span><span>Wind</span><span>Encounters</span><span>Dire mare</span>
+        <span>Silence</span><span>Celebration</span><span>Wind</span><span>Encounters</span><span>Dire mare</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec manifesto" aria-label="Where it starts">
+    <div class="wrap">
+      <p class="m1">To most it seemed <span class="y">impossible.</span></p>
+      <p class="m2">Some told us to let it go. Many asked us <b>why</b>.</p>
+      <p class="m3">We are here.</p>
+      <p class="m4">Welcome aboard.</p>
+    </div>
+  </section>
+
+  <section class="sec veicolo" id="veicolo">
+    <div class="wrap grid">
+      <div>
+        <span class="tag">Futura</span>
+        <h2 class="big">A boat like no other</h2>
+        <p class="lead">A new kind of comfort: spaces never seen aboard, gentle sailing, guests free to enjoy the sea without a care.</p>
+        <div class="tiles">
+          <div class="tile"><h3>New spaces</h3><p>A completely open deck, as you have never seen at sea</p></div>
+          <div class="tile"><h3>New comfort</h3><p>You sail standing, balanced, without effort</p></div>
+          <div class="tile"><h3>Incredible performance</h3><p>The wind carries her far, and leaves you open-mouthed</p></div>
+        </div>
+      </div>
+      <div class="photo"><img src="media/futura-aerea.jpg" alt="Futura seen from above, sailing on a green-turquoise sea with the crew aboard"></div>
+    </div>
+  </section>
+
+  <section class="sec viaggio" id="viaggio">
+    <div class="wrap">
+      <span class="tag">The journey</span>
+      <h2 class="big">A summer<br>to <span class="y">discover</span></h2>
+      <p class="lead">From spring to September Futura heads up the Adriatic, runs down the coast of Puglia, reaches Naples, then Amalfi, Capri, Sardinia and the Côte d’Azur. She stays for days, welcomes visitors aboard, and sets off again with new guests. The journey is the story.</p>
+    </div>
+  </section>
+
+
+  <section class="tappe" id="luoghi" aria-label="Places along the journey">
+    <div class="wrap head">
+      <span class="tag turq">The ports</span>
+      <h2 class="big">Harbours, coasts, evening lights</h2>
+    </div>
+    <div class="mosaic">
+      <figure class="m-a" style="background-image:url(../assets/tour/venezia-tramonto.jpg)"><figcaption>Venice</figcaption></figure>
+      <figure class="m-b" style="background-image:url(../assets/tour/vieste.jpg)"><figcaption>Gargano</figcaption></figure>
+      <figure class="m-c" style="background-image:url(../assets/tour/polignano.jpg)"><figcaption>Puglia</figcaption></figure>
+      <figure class="m-d" style="background-image:url(../assets/tour/salento.jpg)"><figcaption>Salento</figcaption></figure>
+      <figure class="m-e" style="background-image:url(../assets/tour/amalfi-costa.jpg)"><figcaption>Amalfi Coast</figcaption></figure>
+      <figure class="m-f" style="background-image:url(../assets/tour/sardegna.jpg)"><figcaption>Sardinia</figcaption></figure>
+      <figure class="m-g" style="background-image:url(../assets/tour/costa-azzurra.jpg)"><figcaption>Côte d’Azur</figcaption></figure>
+      <figure class="m-h" style="background-image:url(../assets/tour/calette.jpg)"><figcaption>Coves</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec film" id="film">
+    <div class="wrap grid">
+      <div>
+        <span class="tag turq">Aboard</span>
+        <h2 class="big">This is how we sail</h2>
+        <p class="lead">The open sea from the point of view of those who step aboard.</p>
+      </div>
+      <div class="screen">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="Sailing aboard Futura">
+          <source src="media/andatura-laterale.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="duo" aria-label="The rhythm of the journey">
+    <div class="pane quiet">
+      <span class="tag">Silence</span>
+      <h2>dawn in silence</h2>
+      <p>Only water and wind. Bays and protected areas reachable only under sail, fishermen telling their stories, the slow rhythm of the open sea.</p>
+    </div>
+    <div class="pane fest">
+      <span class="tag">Celebration</span>
+      <h2>Night in the marina</h2>
+      <p>The liveliest port of the summer: music, dinners, people who came from far away. Full energy, without losing character.</p>
+    </div>
+  </section>
+
+  <section class="sec rotta" id="rotta">
+    <div class="wrap">
+      <span class="tag">The route · indicative</span>
+      <h2 class="big">From Rimini to the Côte d’Azur</h2>
+      <p class="lead">Ports and dates are confirmed together with our sponsors. July in Naples, with the America’s Cup, is the high point of the summer.</p>
+      <svg class="wave" viewBox="0 0 1000 80" role="img" aria-label="Summer line with five legs, from spring to September">
+        <path d="M0 40 C 60 4, 140 76, 200 40 S 340 4, 400 40 S 540 76, 600 40 S 740 4, 800 40 S 940 76, 1000 40" fill="none" stroke="#005581" stroke-width="3"/>
+        <circle cx="100" cy="40" r="11" fill="#005581"/>
+        <circle cx="300" cy="40" r="11" fill="#005581"/>
+        <circle cx="500" cy="40" r="18" fill="#1EC8BE"/>
+        <circle cx="700" cy="40" r="11" fill="#005581"/>
+        <circle cx="900" cy="40" r="11" fill="#005581"/>
+      </svg>
+      <div class="legs">
+        <div class="leg"><h3>Spring</h3><ul><li>Rimini</li><li>Ravenna</li><li>Chioggia</li><li>Venice</li><li>Croatia</li><li>Senigallia</li></ul></div>
+        <div class="leg"><h3>June</h3><ul><li>Tremiti</li><li>Gargano</li><li>Trani</li><li>Bari</li><li>Lecce</li><li>Otranto</li></ul></div>
+        <div class="leg hot"><h3>July</h3><ul><li>Naples</li><li>America’s Cup</li></ul></div>
+        <div class="leg"><h3>August</h3><ul><li>Amalfi</li><li>Capri</li></ul></div>
+        <div class="leg"><h3>September</h3><ul><li>Sardinia</li><li>Liguria</li><li>Monte Carlo</li><li>Cannes</li><li>Genoa</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tappa" id="tappa">
+    <div class="wrap">
+      <span class="tag">Every port</span>
+      <h2 class="big">The same pattern, in every port</h2>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Arrival</h3><p>A scheduled event as we enter port: the boat arrives and the port notices.</p></div>
+        <div class="step"><b>02</b><h3>Hospitality</h3><p>Parties, dinners and trials aboard. We stay a few days, unhurried.</p></div>
+        <div class="step"><b>03</b><h3>Encounters</h3><p>Local figures, fishermen and experts who share their secrets; visits inland.</p></div>
+        <div class="step"><b>04</b><h3>Departure</h3><p>We sail with a guest aboard for a stretch of the journey, and the story goes on.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec incontri" id="incontri">
+    <div class="wrap grid">
+      <img src="../assets/tour/amalfi-costa.jpg" alt="Fishing boats in front of a coast dropping steeply to the sea">
+      <div>
+        <span class="tag">Encounters</span>
+        <h2 class="big">The sea is told by those who live by it</h2>
+        <div class="rows">
+          <div class="row"><h3>Those who work the sea</h3><p>Fishermen and harbour people who bring aboard the stories and secrets of the coast.</p></div>
+          <div class="row"><h3>Those who built the boat</h3><p>The master sailmaker who delivers a new sail and stays a few days aboard with his crew.</p></div>
+          <div class="row"><h3>Those who sail her</h3><p>An exceptional skipper who takes the helm along the Ligurian coast.</p></div>
+          <div class="row"><h3>Those who know the place</h3><p>Local experts and visits inland: Italy seen by those who live in it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ospiti" id="ospiti">
+    <div class="wrap">
+      <span class="tag turq">The guests</span>
+      <h2 class="big">Every port, someone new aboard</h2>
+      <div class="guest"><h3>VIP</h3><p>A special guest steps aboard and tells of their sea.</p></div>
+      <div class="guest"><h3>Influencer</h3><p>A creator who earned a place aboard through a contest among creators.</p></div>
+      <div class="guest"><h3>Contest</h3><p>The community takes part and chooses: the journey reaches social media before we even leave.</p></div>
+    </div>
+  </section>
+
+  <section class="sec serie" id="serie">
+    <div class="wrap">
+      <span class="tag">The social campaign</span>
+      <h2 class="big">A series, not a shop window</h2>
+      <p class="lead">A story in episodes that follows the journey day by day. Each format carries a STRAMBA value and can host a sponsor who shares it.</p>
+      <div class="cards">
+        <article class="card"><h3>Dawn in silence</h3><p>Only the sound of water and wind, no speech.</p><small>Love for the sea</small></article>
+        <article class="card b"><h3>Who is aboard</h3><p>One portrait at a time: a person doing their craft.</p><small>Uniqueness of talent and character</small></article>
+        <article class="card"><h3>The fisherman</h3><p>The meeting, in port or in a bay, with someone who works the sea.</p><small>Authentic contact</small></article>
+        <article class="card b"><h3>Where only sail goes</h3><p>Arriving in a bay or protected area reachable only under sail.</p><small>Innovation, planet</small></article>
+        <article class="card c"><h3>One gesture</h3><p>A manoeuvre filmed from start to finish, with no visible effort.</p><small>Comfort, intelligence</small></article>
+        <article class="card"><h3>Night in the marina</h3><p>A party filmed handheld, noise and light.</p><small>Intensity</small></article>
+        <article class="card b"><h3>The harbour’s gaze</h3><p>Futura comes in and the people on the quay turn their heads.</p><small>Stars without seeking it</small></article>
+        <article class="card s"><h3>The signed episode</h3><p>An episode built together with a sponsor, around one of their values.</p><small>Yours</small></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sponsor" id="sponsor">
+    <div class="wrap">
+      <span class="tag">How to be part of it</span>
+      <h2 class="big">Three ways to come aboard</h2>
+      <div class="forms">
+        <div class="form"><h3>Presence on screen</h3><p>An object or gesture of your brand appears in an episode that shares its value, with no dedicated shots.</p></div>
+        <div class="form"><h3>Guest of the story</h3><p>One of your people or products becomes the protagonist of an episode, aboard, in port or in an encounter.</p></div>
+        <div class="form"><h3>Signed episode</h3><p>An episode conceived with you around one of your values, filmed and edited in our voice.</p></div>
+      </div>
+      <p class="note">Hospitality aboard, events in the ports and sea trials are built together with each sponsor.</p>
+    </div>
+  </section>
+
+  <section class="sec budget" id="budget">
+    <div class="wrap">
+      <span class="tag turq">Let’s talk</span>
+      <h2 class="big">We build the programme together</h2>
+      <p class="lead">Each sponsor takes part with a contribution to be agreed together, based on presence, hospitality and episodes.</p>
+      <a class="cta" href="https://www.stramba.it" target="_blank" rel="noopener">Talk to STRAMBA</a>
+    </div>
+  </section>
+
+  <section class="sec end" aria-label="Closing">
+    <div class="wrap">
+      <blockquote>«Le vent se lève, il faut tenter de vivre.»<cite>Paul Valéry</cite></blockquote>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="media/stramba-white.png" alt="STRAMBA" width="88" height="46">
+    <p>A new sea-experience · from love and respect for the planet</p>
+  </div>
+</footer>
+
+<audio id="bgm" loop preload="none" src="media/colonna-sonora.mp3"></audio>
+
+<script>
+(function(){
+  var hero=document.getElementById('heroVideo');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video').forEach(function(v){
+    v.muted=true;
+    if(reduce){v.pause();}
+    else{var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  });
+
+  /* colonna sonora: usa media/colonna-sonora.mp3 se c'è, altrimenti un tappeto sonoro generato */
+  var btn=document.getElementById('sound'),lab=document.getElementById('soundLabel'),audio=document.getElementById('bgm');
+  var on=false,synth=null;
+
+  function startSynth(){
+    var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    var ctx=new AC(),t=ctx.currentTime;
+    var master=ctx.createGain();master.gain.setValueAtTime(0,t);master.gain.linearRampToValueAtTime(0.16,t+3);master.connect(ctx.destination);
+    var lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=700;lp.Q.value=0.7;lp.connect(master);
+    var lfo=ctx.createOscillator();lfo.frequency.value=0.07;var lg=ctx.createGain();lg.gain.value=350;lfo.connect(lg);lg.connect(lp.frequency);lfo.start();
+    [146.83,220,293.66,369.99,440].forEach(function(f,i){
+      [-6,6].forEach(function(d){
+        var o=ctx.createOscillator();o.type=i%2?'triangle':'sawtooth';o.frequency.value=f;o.detune.value=d;
+        var g=ctx.createGain();g.gain.value=0.07;o.connect(g);g.connect(lp);o.start();
+      });
+    });
+    var len=ctx.sampleRate*4,buf=ctx.createBuffer(1,len,ctx.sampleRate),data=buf.getChannelData(0);
+    for(var i=0;i<len;i++)data[i]=Math.random()*2-1;
+    var src=ctx.createBufferSource();src.buffer=buf;src.loop=true;
+    var bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=500;bp.Q.value=0.5;
+    var ng=ctx.createGain();ng.gain.value=0.05;
+    var l2=ctx.createOscillator();l2.frequency.value=0.11;var l2g=ctx.createGain();l2g.gain.value=0.04;l2.connect(l2g);l2g.connect(ng.gain);l2.start();
+    src.connect(bp);bp.connect(ng);ng.connect(master);src.start();
+    synth={ctx:ctx,master:master};
+  }
+  function stopSynth(){
+    if(!synth)return;var c=synth.ctx,m=synth.master,now=c.currentTime;
+    m.gain.cancelScheduledValues(now);m.gain.setValueAtTime(m.gain.value,now);m.gain.linearRampToValueAtTime(0,now+0.8);
+    setTimeout(function(){try{c.close();}catch(e){}},1000);synth=null;
+  }
+  function turnOn(){
+    on=true;btn.setAttribute('aria-pressed','true');lab.textContent='Sound on';
+    var done=false;
+    function fallback(){if(done||!on)return;done=true;startSynth();}
+    var timer=setTimeout(fallback,1500);
+    var p;try{p=audio.play();}catch(e){p=null;}
+    if(p&&p.then){p.then(function(){done=true;clearTimeout(timer);}).catch(function(){clearTimeout(timer);fallback();});}
+    else{clearTimeout(timer);fallback();}
+  }
+  function turnOff(){
+    on=false;btn.setAttribute('aria-pressed','false');lab.textContent='Sound';
+    try{audio.pause();}catch(e){}
+    stopSynth();
+  }
+  btn.addEventListener('click',function(){on?turnOff():turnOn();});
+})();
+</script>
