@@ -11,8 +11,10 @@
 <link rel="preload" href="assets/fonts/jost-latin-200-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 <style>
-.t-hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;background:#0b3550 url(assets/futura-virata-poster.jpg) center/cover;overflow:hidden}
-.t-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t-hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;background:#0b1522;overflow:hidden}
+.t-hero .kb{position:absolute;inset:0;background:center/cover;animation:kb 28s ease-out both}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.t-hero .kb{animation:none}}
 .t-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,15,18,.35) 0%,rgba(18,15,18,.1) 35%,rgba(18,15,18,.88) 100%)}
 .t-hero .wrap{position:relative;z-index:2;padding-bottom:90px;width:100%}
 .t-hero h1{font-size:clamp(56px,11vw,150px);font-weight:200;text-transform:uppercase;margin-bottom:22px}
@@ -70,20 +72,20 @@
       <li><a href="./">Futura</a></li>
       <li><a href="#viaggio">Il viaggio</a></li>
       <li><a href="#tappe">Le tappe</a></li>
-      <li><a href="#sponsor">Sponsor</a></li>
+      <li><a href="area-sponsor.html">Area sponsor</a></li>
     </ul>
-    <a href="#contatti" class="btn btn-y">Contattaci</a>
+    <a href="#contatti" class="btn btn-y">Diventa sponsor</a>
   </div>
 </nav>
 
 <header class="t-hero">
-  <video autoplay muted loop playsinline poster="assets/futura-virata-poster.jpg"><source src="assets/futura-virata.mp4" type="video/mp4"></video>
+  <div class="kb" style="background-image:url(assets/tour/venezia-notte.jpg)"></div>
   <div class="wrap">
     <div class="eyebrow">Futura Tour · <b>Estate 2027</b></div>
     <h1>Tutto<br>il <b>mare</b></h1>
     <p>Un'estate intera a bordo di Futura, nei porti più vivi del Mediterraneo. Silenzio, vento, feste, incontri. Cerchiamo chi vuole salire a bordo con noi.</p>
     <div class="ctas">
-      <a href="#contatti" class="btn btn-y">Voglio partecipare</a>
+      <a href="#contatti" class="btn btn-y">Diventa sponsor</a>
       <a href="#viaggio" class="btn btn-o">Il viaggio</a>
     </div>
   </div>
@@ -127,10 +129,6 @@
   </div>
 </section>
 
-<div class="band night" style="background-image:url(assets/tour/venezia-notte.jpg)">
-  <div class="wrap"><q>Poi si <b>riparte</b></q><small>Ogni tappa è un racconto</small></div>
-</div>
-
 <section id="sponsor" style="background:var(--black2);border-top:1px solid var(--line)">
   <div class="wrap">
     <div class="kicker">Sponsor</div>
@@ -152,7 +150,7 @@
 <section class="priv">
   <div class="wrap">
     <p><b style="font-weight:500;color:#fff">Hai già ricevuto un invito?</b> Entra nell'area riservata: ti chiederemo la mail e ti manderemo un codice di accesso.</p>
-    <a href="sponsor/" class="btn btn-o">Area sponsor</a>
+    <a href="area-sponsor.html" class="btn btn-o">Area sponsor</a>
   </div>
 </section>
 

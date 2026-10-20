@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Area sponsor — STRAMBA Yachts</title>
+<meta name="description" content="Accesso riservato agli sponsor del Futura Tour 2027.">
+<link rel="preload" href="assets/fonts/jost-latin-200-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.gate{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#07131f}
+.gate .kb{position:absolute;inset:0;background:url(assets/tour/italia.jpg) 58% 50%/cover;animation:kb 30s ease-out both}
+@keyframes kb{from{transform:scale(1.1)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.gate .kb{animation:none}}
+.gate::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,19,31,.88) 0%,rgba(7,19,31,.55) 45%,rgba(7,19,31,.05) 80%),linear-gradient(180deg,rgba(7,19,31,.4),rgba(7,19,31,0) 30%,rgba(7,19,31,.6))}
+.gate .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:80px;width:100%}
+.gate h1{font-size:clamp(46px,8vw,110px);font-weight:200;text-transform:uppercase;margin-bottom:20px;line-height:1}
+.gate h1 b{font-weight:500;color:var(--yellow)}
+.gate p{font-size:clamp(17px,2vw,21px);max-width:520px;color:rgba(255,255,255,.9);margin-bottom:30px}
+.steps2{display:flex;gap:10px 28px;flex-wrap:wrap;margin:0 0 34px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:400}
+.steps2 span i{font-style:normal;color:var(--yellow);margin-right:10px}
+.req{background:var(--black2)}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="./" class="logo">STR<span class="a">A</span>MBA<small>YACHTS</small></a>
+    <ul>
+      <li><a href="./">Futura</a></li>
+      <li><a href="tour-2027.html">Tour 2027</a></li>
+    </ul>
+    <a href="#richiesta" class="btn btn-y">Richiedi accesso</a>
+  </div>
+</nav>
+
+<header class="gate">
+  <div class="kb"></div>
+  <div class="wrap">
+    <div class="eyebrow">Futura Tour 2027 · <b>Area riservata</b></div>
+    <h1>Area<br><b>sponsor</b></h1>
+    <p>Il programma completo del tour, le tappe, gli ospiti e le formule di partecipazione. Accesso riservato a chi abbiamo invitato.</p>
+    <div class="steps2"><span><i>01</i>Inserisci la tua mail</span><span><i>02</i>Ricevi un codice</span><span><i>03</i>Entra</span></div>
+    <div class="ctas">
+      <a href="sponsor/" class="btn btn-y">Entra</a>
+      <a href="#richiesta" class="btn btn-o">Non ho ancora l'accesso</a>
+    </div>
+  </div>
+</header>
+
+<section class="form-sec req" id="richiesta">
+  <div class="wrap form-grid">
+    <div>
+      <div class="kicker">Richiedi l'accesso</div>
+      <h2>Vuoi partecipare<br>al tour 2027?</h2>
+      <p class="body">Scrivici chi sei e di cosa ti occupi. Se il progetto può interessarti ti ricontattiamo e ti attiviamo l'accesso con la tua mail.</p>
+    </div>
+    <form id="form" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+      <div><label class="lbl" for="n">Nome e cognome</label><input id="n" name="name" required autocomplete="name"></div>
+      <div><label class="lbl" for="a">Azienda</label><input id="a" name="azienda" autocomplete="organization"></div>
+      <div><label class="lbl" for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+      <div><label class="lbl" for="p">Telefono</label><input id="p" name="telefono" type="tel" autocomplete="tel"></div>
+      <div class="full"><label class="lbl" for="m">Messaggio</label><textarea id="m" name="message"></textarea></div>
+      <label class="check full"><input type="checkbox" id="privacy" required> <span>Ho letto l'<a href="privacy.html" target="_blank">informativa privacy</a>.</span></label>
+      <div class="full"><button class="btn btn-y" type="submit" id="send">Richiedi accesso</button></div>
+      <div class="msg" id="msg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>STRAMBA S.r.l. · P.IVA IT04156810402 · Riccione (RN)</div>
+    <div>Parte di <a href="https://www.stramba.blue">STRAMBA</a> · <a href="privacy.html">Privacy &amp; cookie</a></div>
+  </div>
+</footer>
+
+<script>
+const WEB3FORMS_KEY = "04ab7bff-616c-4919-b332-3deb599f6a28";
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60), {passive:true});
+document.getElementById('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, F = n => f.elements[n], msg = document.getElementById('msg'), btn = document.getElementById('send');
+  const show = (cls, t) => { msg.className = 'msg ' + cls; msg.textContent = t; };
+  if(!F('name').value.trim() || !F('email').value || !F('email').checkValidity()){ return show('err', 'Inserisci nome ed email validi.'); }
+  if(!document.getElementById('privacy').checked){ return show('err', "Conferma di aver letto l'informativa privacy."); }
+  const data = {
+    access_key: WEB3FORMS_KEY,
+    subject: 'Futura Tour 2027 — richiesta accesso area sponsor',
+    from_name: 'STRAMBA Yachts — Area sponsor',
+    name: F('name').value.trim(), email: F('email').value.trim(),
+    azienda: F('azienda').value.trim() || '—', telefono: F('telefono').value.trim() || '—',
+    message: F('message').value.trim() || '—', botcheck: F('botcheck').checked
+  };
+  btn.disabled = true; btn.textContent = 'Invio…';
+  try{
+    const r = await fetch('https://api.web3forms.com/submit', {method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json'}, body: JSON.stringify(data)});
+    const j = await r.json();
+    if(j.success){ f.reset(); show('ok', 'Grazie! Ti ricontatteremo presto per attivare l\'accesso.'); }
+    else throw 0;
+  }catch(_){ show('err', 'Invio non riuscito. Riprova tra qualche minuto.'); }
+  btn.disabled = false; btn.textContent = 'Richiedi accesso';
+});
+</script>
+</body>
+</html>
