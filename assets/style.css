@@ -148,3 +148,4 @@ footer a{text-decoration:none;color:#fff}
 /* selettore lingua IT/EN */
 nav .lg{opacity:.55;letter-spacing:.14em}
 nav .lg.on{opacity:1;color:var(--yellow)}
+@media (max-width:860px){ nav ul li.lgi{order:-1} }
