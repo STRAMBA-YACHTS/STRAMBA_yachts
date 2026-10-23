@@ -193,6 +193,20 @@ ul{padding:0;list-style:none}
 .cta:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--sun)}
 
 
+
+/* perché: scopo, parole chiave, valori */
+.perche{background:var(--deep)}
+.perche h2{font-size:clamp(2.2rem,5.6vw,4.8rem);margin-block:24px 0;max-width:20ch}
+.perche .lead{margin-top:24px;color:var(--foam)}
+.kw{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:clamp(28px,4vw,48px);padding:0;list-style:none}
+.kw li{font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(.95rem,1.6vw,1.25rem);padding:.55em 1.1em;border:2px solid var(--turq);color:var(--foam)}
+.kw li:nth-child(3n+1){background:var(--turq);color:var(--abyss)}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;margin-top:clamp(32px,4vw,56px)}
+.val{background:var(--abyss);padding:24px 22px 26px}
+.val h3{font-weight:900;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;color:var(--sun)}
+.val p{margin-top:10px;font-size:1rem;line-height:1.45;color:var(--mist)}
+.perche .why{margin-top:clamp(28px,4vw,48px);font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.4rem,2.8vw,2.2rem);color:var(--sun);max-width:34ch}
+
 /* manifesto */
 .manifesto{background:var(--abyss)}
 .manifesto .wrap{display:flex;flex-direction:column;gap:clamp(18px,3vw,36px)}
@@ -292,6 +306,24 @@ ul{padding:0;list-style:none}
         </div>
       </div>
       <div class="photo"><img src="media/futura-aerea.jpg" alt="Futura vista dall’alto in navigazione su un mare verde-turchese, con l’equipaggio a bordo"></div>
+    </div>
+  </section>
+
+  <section class="sec perche" id="perche">
+    <div class="wrap">
+      <span class="tag">Il perché</span>
+      <h2 class="big">Un modo nuovo di stare in mare, e di raccontarlo</h2>
+      <p class="lead">Facciamo questo viaggio per far scoprire che il mare si può vivere in un altro modo: più libero, più comodo, più rispettoso del pianeta. E per raccontarlo insieme a chi condivide questo sguardo.</p>
+      <ul class="kw"><li>Scoperta</li><li>Meraviglia</li><li>Silenzio</li><li>Festa</li><li>Incontri</li><li>Pianeta</li></ul>
+      <div class="vals">
+        <div class="val"><h3>Innovazione e visione</h3><p>Essere smart e visionari: pensare il mare in un modo nuovo, un passo più in là.</p></div>
+        <div class="val"><h3>Mare e pianeta</h3><p>Amore per il mare e rispetto per ciò che lo abita: baie e aree protette raggiungibili solo a vela.</p></div>
+        <div class="val"><h3>Comfort rilassato</h3><p>Un’andatura dolce, spazi liberi, nessuna fatica: il mare si gode e basta.</p></div>
+        <div class="val"><h3>Unicità</h3><p>Talento e carattere: ognuno a bordo resta quello che è.</p></div>
+        <div class="val"><h3>Protagonisti senza cercarlo</h3><p>Si arriva in porto e la gente si volta. Non serve altro.</p></div>
+        <div class="val"><h3>Silenzio e festa</h3><p>Il contatto con il mare e con la natura, e le serate più intense nelle marine più vive.</p></div>
+      </div>
+      <p class="why">Perché esserci: entrare in un racconto con valori chiari, e farli tuoi senza forzarli.</p>
     </div>
   </section>
 

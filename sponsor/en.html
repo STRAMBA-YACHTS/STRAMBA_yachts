@@ -193,6 +193,20 @@ ul{padding:0;list-style:none}
 .cta:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--sun)}
 
 
+
+/* perché: scopo, parole chiave, valori */
+.perche{background:var(--deep)}
+.perche h2{font-size:clamp(2.2rem,5.6vw,4.8rem);margin-block:24px 0;max-width:20ch}
+.perche .lead{margin-top:24px;color:var(--foam)}
+.kw{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:clamp(28px,4vw,48px);padding:0;list-style:none}
+.kw li{font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(.95rem,1.6vw,1.25rem);padding:.55em 1.1em;border:2px solid var(--turq);color:var(--foam)}
+.kw li:nth-child(3n+1){background:var(--turq);color:var(--abyss)}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;margin-top:clamp(32px,4vw,56px)}
+.val{background:var(--abyss);padding:24px 22px 26px}
+.val h3{font-weight:900;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;color:var(--sun)}
+.val p{margin-top:10px;font-size:1rem;line-height:1.45;color:var(--mist)}
+.perche .why{margin-top:clamp(28px,4vw,48px);font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.4rem,2.8vw,2.2rem);color:var(--sun);max-width:34ch}
+
 /* manifesto */
 .manifesto{background:var(--abyss)}
 .manifesto .wrap{display:flex;flex-direction:column;gap:clamp(18px,3vw,36px)}
@@ -292,6 +306,24 @@ ul{padding:0;list-style:none}
         </div>
       </div>
       <div class="photo"><img src="media/futura-aerea.jpg" alt="Futura seen from above, sailing on a green-turquoise sea with the crew aboard"></div>
+    </div>
+  </section>
+
+  <section class="sec perche" id="perche">
+    <div class="wrap">
+      <span class="tag">Why</span>
+      <h2 class="big">A new way of being at sea, and of telling it</h2>
+      <p class="lead">We make this journey to show that the sea can be lived in another way: freer, more comfortable, more respectful of the planet. And to tell it together with those who share this outlook.</p>
+      <ul class="kw"><li>Discovery</li><li>Wonder</li><li>Silence</li><li>Celebration</li><li>Encounters</li><li>Planet</li></ul>
+      <div class="vals">
+        <div class="val"><h3>Innovation and vision</h3><p>Being smart and visionary: thinking about the sea in a new way, one step further.</p></div>
+        <div class="val"><h3>Sea and planet</h3><p>Love for the sea and respect for all that lives in it: bays and protected areas reachable only under sail.</p></div>
+        <div class="val"><h3>Relaxed comfort</h3><p>Gentle sailing, open spaces, no effort: the sea is simply to be enjoyed.</p></div>
+        <div class="val"><h3>Uniqueness</h3><p>Talent and character: everyone aboard stays who they are.</p></div>
+        <div class="val"><h3>Stars without seeking it</h3><p>You come into port and people turn their heads. Nothing more is needed.</p></div>
+        <div class="val"><h3>Silence and celebration</h3><p>Contact with the sea and nature, and the most intense nights in the liveliest marinas.</p></div>
+      </div>
+      <p class="why">Why be part of it: join a story with clear values, and make them yours without forcing them.</p>
     </div>
   </section>
 
